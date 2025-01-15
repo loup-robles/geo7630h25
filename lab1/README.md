@@ -9,7 +9,7 @@ Le Workbench ressemble à ça :
 
 ![FME_workbench](https://github.com/user-attachments/assets/0e7f728b-0044-405b-9052-41d9bd669409)
 
-- La premiere boite est un Reader qui extrait les données CSV à partir de l'URL d'où est la donnée. ![Ma photo] (lab1/Image/FME_add_reader.png)
+- La premiere boite est un Reader qui extrait les données CSV à partir de l'URL d'où est la donnée.
 
 ![FME_add_reader](https://github.com/user-attachments/assets/716decf3-079b-4147-b9c2-e57ad49c8449)
 

@@ -9,5 +9,5 @@ Le Workbench ressemble à ça :
 - Le regroupement de boite suivant est un transformer (VertexCreator) qui ajoute des coordonnées à partir des latitudes longitudes. Ce transformer a rendu 2106 erreurs qui sont des entités dont les valeurs des champs latitudes longitudes etaient nulles. ils sont stocké dans un logger.
 - La dernière boite est un Writer qui injecte la données transformée dans notre base de données.
 
-##**Étape 3, visualisation des données sur QGIS**
+## **Étape 3, visualisation des données sur QGIS**
 Pour visualiser la données transformées, on créer une connection Postgis avec notre base de données. Il reste simplement à ajouter la couche ponctuelle des établissements alimentaires et à modifier sa symbologie.

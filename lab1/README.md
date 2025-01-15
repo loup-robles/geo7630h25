@@ -7,6 +7,8 @@ Cette étape propose une prise en main rapide de FME, en observant les potential
 Le Workbench ressemble à ça :
 - La premiere boite est un Reader qui extrait les données CSV à partir de l'URL d'où est la donnée. ![Ma photo] (lab1/Image/FME_add_reader.png)
 
+![FME_add_reader](https://github.com/user-attachments/assets/716decf3-079b-4147-b9c2-e57ad49c8449)
+
 - Le regroupement de boite suivant est un transformer (VertexCreator) qui ajoute des coordonnées à partir des latitudes longitudes. Ce transformer a rendu 2106 erreurs qui sont des entités dont les valeurs des champs latitudes longitudes etaient nulles. ils sont stocké dans un logger.
 - La dernière boite est un Writer qui injecte la données transformée dans notre base de données.
 

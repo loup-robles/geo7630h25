@@ -5,7 +5,7 @@ la premiere étape consiste à prendre en main l'interface de GitHub. On commenc
 ## **Étape 2, création d'un workbench FME**
 Cette étape propose une prise en main rapide de FME, en observant les potentialités du logiciels que nous utiliseront tout au long de la session (connection à une base de données en ligne, mise à jour de base de données, ect). On utilise ici une base de données disponible en ligne sur le site des données ouvertes de la ville de Montréal et représentant les établissements alimentaires. L'objectif est de prendre les informations de la base de données ; de les transformer pour, à partir des champs lat/long, obtenir les géométries des points avant de les réinjecter dans une autre base de donnée. Cette autre base de données est une base de données postgis hebergée sur un serveur amazon. On pourra ensuite visualiser la donnée.
 Le Workbench ressemble à ça :
-- La premiere boite est un Reader qui extrait les données CSV à partir de l'URL d'où est la donnée.
+- La premiere boite est un Reader qui extrait les données CSV à partir de l'URL d'où est la donnée. (lab1/Image/FME_add_reader.png)
 - Le regroupement de boite suivant est un transformer (VertexCreator) qui ajoute des coordonnées à partir des latitudes longitudes. Ce transformer a rendu 2106 erreurs qui sont des entités dont les valeurs des champs latitudes longitudes etaient nulles. ils sont stocké dans un logger.
 - La dernière boite est un Writer qui injecte la données transformée dans notre base de données.
 

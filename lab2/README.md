@@ -8,10 +8,14 @@ on commence ce laboratoire en ajoutant les données au FME. ici deux données so
 ces données sont ajoutés avec des readers adaptés : l'un vers CSV, l'autre vers GEOJSON et les deux en utilisant l'URL du liens de téléchargement de la donnée.
 Pour la couche des arbres la méthodologie de la ville de Montréal indique que les coordonnées X/Y des points ont été renseignée dans le système de coordonnées NAD83 MTM8 dont le code EPSG souvent utilisé est le 32188. J'ai donc utilisé ce système dans le reader de cette données.
 
-Mais lors de l'ajout, après observation des données on remarque que plusieurs points sont en dehors du terroitoire montréalais. Ceci est surement du à des erreurs dans le remplissage des champs lattitude/longitude lors de la création de la donnée. Pour filtrer ces erreurs on utilise successivement deux transformers (AttributeRangeFilter) sur les champs lattitude et longitudes. les valeurs de longitudes éronnées semblent etre celles comprises entre -73,9 et -73,0. Pour les lattitudes ont exclues les valeurs qui ne sont pas comprises entre 45,4 et 45,8.
-
+Mais lors de l'ajout, après observation des données on remarque que plusieurs points sont en dehors du terroitoire montréalais. Ceci est surement du à des erreurs dans le remplissage des champs lattitude/longitude lors de la création de la donnée. 
 
 ![1](https://github.com/user-attachments/assets/79ffc078-5180-4842-9100-d268133f629e)
+
+
+Pour filtrer ces erreurs on utilise successivement deux transformers (AttributeRangeFilter) sur les champs lattitude et longitudes. les valeurs de longitudes éronnées semblent etre celles comprises entre -73,9 et -73,0. Pour les lattitudes ont exclues les valeurs qui ne sont pas comprises entre 45,4 et 45,8. Pour filtrer j'ai utilisé deux transformer "AttributeRangeFilter", l'un pour la lattitude, l'autre pour la longitude.
+
+![2](https://github.com/user-attachments/assets/99a17d33-2ba7-49a0-81db-f1f389b1bae0)
 
 
 Les deux données (arbres et quartiers) sont ensuite reprojetés vers le système de coordonnées indiqué dans le protocole : EPSG 3857

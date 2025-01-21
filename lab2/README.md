@@ -13,7 +13,7 @@ Mais lors de l'ajout, après observation des données on remarque que plusieurs 
 ![1](https://github.com/user-attachments/assets/79ffc078-5180-4842-9100-d268133f629e)
 
 
-Pour filtrer ces erreurs on utilise successivement deux transformers (AttributeRangeFilter) sur les champs lattitude et longitudes. les valeurs de longitudes éronnées semblent etre celles comprises entre -73,9 et -73,0. Pour les lattitudes ont exclues les valeurs qui ne sont pas comprises entre 45,4 et 45,8. Pour filtrer j'ai utilisé deux transformer "AttributeRangeFilter", l'un pour la lattitude, l'autre pour la longitude.
+Pour filtrer ces erreurs on utilise successivement deux transformers (AttributeRangeFilter) sur les champs lattitude et longitudes. les valeurs de longitudes éronnées semblent etre celles comprises entre -73,9 et -73,0. Pour les lattitudes ont exclues les valeurs qui ne sont pas comprises entre 45,4 et 45,8. Pour filtrer j'ai utilisé deux transformer "AttributeRangeFilter", l'un pour la lattitude, l'autre pour la longitude. les points dont les coordonnées sont éronnée sont stockés dans des loggers.
 
 ![2](https://github.com/user-attachments/assets/99a17d33-2ba7-49a0-81db-f1f389b1bae0)
 

@@ -1,7 +1,7 @@
 # **📚 Laboratoire 2**
 ## **Étape 1, **
 
-on commence ce laboratoire en ajoutant les données au FME. ici deux données sont utilisées : 
+1. on commence ce laboratoire en ajoutant les données au FME. ici deux données sont utilisées : 
 - une couche ponctuelle des arbres sur le territoire de la ville de Montréal
 - une couche du découpage des quartiers sur l'ile de Montréal
 
@@ -20,4 +20,10 @@ Pour filtrer ces erreurs on utilise successivement deux transformers (AttributeR
 
 Les deux données (arbres et quartiers) sont ensuite reprojetés vers le système de coordonnées indiqué dans le protocole : EPSG 3857
 
-le transformer PointOnAreaOverlayer permet de faire une jointure spatiale entre la couche ponctuelle et polygonale que sont les arbres et les quartiers. on peut désormais savoir combien d'arbres se trouvent dans chaque quartiers.
+le transformer "PointOnAreaOverlayer" permet de faire une jointure spatiale entre la couche ponctuelle et polygonale que sont les arbres et les quartiers. on peut désormais savoir combien d'arbres se trouvent dans chaque quartiers.
+
+![3](https://github.com/user-attachments/assets/adc77fcb-260e-41c2-9b96-f6a615500145)
+![4](https://github.com/user-attachments/assets/7d54ff39-5fed-470a-b07f-86362d0573e3)
+
+
+

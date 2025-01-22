@@ -37,3 +37,24 @@ Cette se réalise avec la succession de 3 transformers :
 - Le champ "densite_arbres" est calculé en divisant le nombre d'arbres par l'aire de l'arrondissement dans lesquels ils se trouvent. le transformer **"AttributeCreator"** est utilisé pour faire se calcule avec les paramètres suivant (**ne pas oublier de remplir l'expression dans l'Arithmetic Editor**).
 
 ![image](https://github.com/user-attachments/assets/d18a5617-522b-4e1a-98d5-cd247f9243ed)
+
+## **Étape 5, Connecter FME à la base de donnée PostGIS**
+
+Le Writer suivant permet de connecter notre donnée à la base de donnée du Laboratoire 1.
+
+![6](https://github.com/user-attachments/assets/e73b9433-b8b7-4abe-9ba1-843186992565)
+
+## **Étape 6, Visualisation dans QGIS**
+
+Après s'être connecté à la base de donnée PostGIS sur QGIS, on peut ajouter la donnée au projet et modifier sa symbologie pour créer une carte lisible et compréhensible.
+
+![7](https://github.com/user-attachments/assets/6b60d17e-fe5c-450f-83c5-868eac552cd2)
+
+Il ne reste plus qu'à enregistrer le style de la couche dans notre base de données
+
+![image](https://github.com/user-attachments/assets/e21af68a-4764-4dc1-aeb4-743eff964795)
+![image](https://github.com/user-attachments/assets/d066ed5c-3880-4916-bc05-9c16dac176dc)
+
+
+
+

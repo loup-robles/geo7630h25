@@ -32,8 +32,8 @@ le transformer "PointOnAreaOverlayer" permet de faire une jointure spatiale entr
 ## **Étape 4, Nettoyer, organiser et calculer un nouveau champ sur la donnée**
 
 Cette se réalise avec la succession de 3 transformers :
-- Le transformer "AttributeKeeper" permet de nettoyer la donnée en conservant uniquement les champs voulu.
+- Le transformer **"AttributeKeeper"** permet de nettoyer la donnée en conservant uniquement les champs voulu.
 - Le **"AttributeManager"** permet lui de renommer les champs ainsi que de modifier le type des champs. Il est utilisé ici pour renommer le champ "_overlaps" en "qt_arbres".
-- Le champ "densite_arbres" est calculé en divisant le nombre d'arbres par l'aire de l'arrondissement dans lesquels ils se trouvent. le transformer "AttributeCreator" est utilisé pour faire se calcule avec les paramètres suivant (ne pas oublier de remplir l'expression dans l'Arithmetic Editor).
+- Le champ "densite_arbres" est calculé en divisant le nombre d'arbres par l'aire de l'arrondissement dans lesquels ils se trouvent. le transformer **"AttributeCreator"** est utilisé pour faire se calcule avec les paramètres suivant (**ne pas oublier de remplir l'expression dans l'Arithmetic Editor**).
 
 ![image](https://github.com/user-attachments/assets/d18a5617-522b-4e1a-98d5-cd247f9243ed)

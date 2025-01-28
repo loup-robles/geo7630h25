@@ -1,20 +1,19 @@
-<p align="center">#TP 1, ébauche de travail de session.</p>
+# **<p align="center">TP 1 : Analyse de la pertinence des stationnements sur l’Île de Montréal.</p>**
 
 
-## Analyse de la pertinence des stationnements sur l’Île de Montréal
 
-### Présenté par
+### <p align="center">Présenté par :</p>
 
-- Loup Robles  
-- Ali Tarhini  
+<p align="center"> Loup Robles</p>
+<p align="center"> Ali Tarhini</p>
 
-### Dans le cadre du cours
+### <p align="center"> Dans le cadre du cours :</p>
 
-- GEO 7630
+<p align="center"> GEO 7630</p>
 
-### Présenté par :  
+### <p align="center"> Présenté par :</p>
 
-- Clément Glogowski  
+<p align="center"> Clément Glogowski</p>
 
 ## Orientation générale :  
 
@@ -47,6 +46,20 @@ Le rendu final de notre travail se présentera sous la forme d’une carte où c
 - Stationnement utile
 - Stationnement utile mais mal positionné
 - Stationnement inutile
+
+une visualisation similaire aux captures d'écran suivantes est envisagée
+
+![image](https://github.com/user-attachments/assets/041b4a79-59be-4b8c-bec7-c284d0f60425)
+
+(image tirée du lien suivant : https://creativemarket.com/mouse_md/4052652-Parking-Map-for-App-Card)
+
+![image](https://github.com/user-attachments/assets/fe85876a-5d65-42a6-aae6-da06e9922ad8)
+
+Cette derniere image provient du site d'esri Canada serait une représentation fidèle de ce à quoi nous voulons que notre projet ressemble. a savoir une carte interactive montrant toutes les entités voulue (dans notre cas, les stationnememts) avec des informations supplémentaires lorsqu'on les selectionnes individuellement.
+
+(https://www.esri.ca/fr-ca/products/geo-enabled-products/arcgis-urban/overview)
+
+
 
 ## Intérêt du tableau de bord
 

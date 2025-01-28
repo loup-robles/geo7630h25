@@ -1,4 +1,4 @@
-#TP 1, ébauche de travail de session##
+#TP 1, ébauche de travail de session
 
 ## Analyse de la pertinence des stationnements sur l’Île de Montréal
 

@@ -1,0 +1,107 @@
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Current FME version: FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|System Time: 20250317230535 UTC
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Form (floating)
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Temporary License: 106 days left.
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Machine host name is: C46396
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|OS Locale Name     : fr_CA
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1252
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Users\kg291979\Downloads\Backup_14_04\Backup_14_04/'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'TP2_GEO7630.fmw'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.2.0.0'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 26100)
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Platform: WIN64
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|System Status: 659.31 GB of disk space available in the FME temporary folder (C:\Users\kg291979\AppData\Local\Temp\wbrun_1742246492106_15964\fmetmp_2e)
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|System Status: 31.80 GB of physical memory available
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|System Status: 127.20 GB of virtual memory available
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|START - ProcessID: 7256, peak process memory usage: 42936 kB, current process memory usage: 42936 kB
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:\Users\kg291979\Downloads\Backup_14_04\Backup_14_04\wb-xlate-1742252733378_15964' `--FME_LAUNCH_VIEWER_APP' `WORKBENCH' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LOG_FILENAME' `$(WORKSPACE_NAME).log' `LogCountServerName' `50402' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `50393'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\kg291979\AppData\Roaming\Safe Software\FME\'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;C:\Users\kg291979\Documents\FME\Formats
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\kg291979\AppData\Roaming\Safe Software\FME\Packages\24783-win64\transformers;C:\Program Files\FME\transformers
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\kg291979\Documents\FME\CoordinateSystems
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\kg291979\Documents\FME\CoordinateSystemExceptions
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\kg291979\Documents\FME\CoordinateSystemGridOverrides
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\kg291979\Documents\FME\CsmapTransformationExceptions
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\kg291979\Documents\FME\TransformerCategories
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `C:\Users\kg291979\Downloads\Backup_14_04\Backup_14_04'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\kg291979\AppData\Local\Temp\wbrun_1742246492106_15964\fmetmp_2e', set from environment variable `FME_TEMP'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\kg291979\AppData\Local\Temp'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 95.40 GB
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 71.55 GB
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Creating writer for format: 
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Creating reader for format: 
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Using MultiWriter with keyword `PRIMARY_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2025-03-17 19:05:34|   0.0|  0.0|INFORM|Emptying factory pipeline
+2025-03-17 19:05:34|   0.0|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2025-03-17 19:05:34|   0.0|  0.0|STATS |Unwanted Router Input Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:34|   0.0|  0.0|STATS |CSV_CSV2_8 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:34|   0.0|  0.0|STATS |geobase_mtl_GEOJSON_1 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:34|   0.0|  0.0|STATS |reseau_cyclable_GEOJSON_2 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:34|   0.0|  0.0|STATS |ilots-de-chaleur-images-satellite-2023_SHAPEFILE_2 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:34|   0.0|  0.0|STATS |shape_counte_SHAPEFILE_6 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:34|   0.0|  0.0|STATS |station_SHAPEFILE_4 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:34|   0.0|  0.0|STATS |Restoring 1904 feature(s) from FME feature store file `C:\Users\kg291979\AppData\Local\Temp\wb-cache-TP2_GEO7630-vkWLMF\Main_AttributeManager_4 -1 230 fo 0 OUTPUT  0  f7e246f877b36d9970d9013716183b5e94218ab7.ffs'
+2025-03-17 19:05:34|   0.2|  0.2|INFORM|FME Configuration: Using connection values from 'BD_geo7630h25' for POSTGIS_1
+2025-03-17 19:05:34|   0.2|  0.0|INFORM|Creating writer for format: PostGIS
+2025-03-17 19:05:34|   0.2|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `POSTGIS'
+2025-03-17 19:05:34|   0.2|  0.0|INFORM|Loaded module 'POSTGIS' from file 'C:\Program Files\FME\plugins/POSTGIS.dll'
+2025-03-17 19:05:34|   0.2|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (4.0 20240212)
+2025-03-17 19:05:34|   0.2|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2025-03-17 19:05:34|   0.2|  0.0|INFORM|Writer `POSTGIS_1' of type `POSTGIS' using group definition keyword `POSTGIS_1_DEF'
+2025-03-17 19:05:35|   0.2|  0.0|INFORM|Opening POSTGIS writer for dataset 'geo7630'...
+2025-03-17 19:05:37|   0.2|  0.0|INFORM|PostGIS client encoding: 'UTF8'
+2025-03-17 19:05:37|   0.3|  0.1|INFORM|PostgreSQL 16.3 on aarch64-unknown-linux-gnu, compiled by gcc (GCC) 7.3.1 20180712 (Red Hat 7.3.1-17), 64-bit
+2025-03-17 19:05:37|   0.3|  0.0|INFORM|3.4 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
+2025-03-17 19:05:38|   0.4|  0.1|INFORM|Testing for the existence of table 'ROBL77290108.TP2_Stationnements/BIXI'...
+2025-03-17 19:05:38|   0.4|  0.0|INFORM|Dropping existing table 'ROBL77290108.TP2_Stationnements/BIXI'...
+2025-03-17 19:05:38|   0.4|  0.0|INFORM|Creating table 'ROBL77290108.TP2_Stationnements/BIXI'...
+2025-03-17 19:05:38|   0.4|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'TP2_Stationnements/BIXI'
+2025-03-17 19:05:38|   0.4|  0.0|INFORM|POSTGIS Writer: Creating 'streaming Bulk Copy' feature type processor for feature type 'TP2_Stationnements/BIXI'
+2025-03-17 19:05:38|   0.5|  0.1|INFORM|Committed transaction at feature '1000'
+2025-03-17 19:05:38|   0.5|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 1904 input feature(s), wrote 1904 output feature(s): 0 matched merge filters, 1904 were routed to output, 0 could not be routed.
+2025-03-17 19:05:38|   0.5|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-03-17 19:05:38|   0.5|  0.0|INFORM|Creating 'GIST' index on column "geom" of table 'ROBL77290108.TP2_Stationnements/BIXI'...
+2025-03-17 19:05:38|   0.5|  0.0|INFORM|Successfully closed POSTGIS database writer
+2025-03-17 19:05:38|   0.5|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|INFORM|Feature output statistics for `POSTGIS' writer using keyword `POSTGIS_1':
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |                               Features Written
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |TP2_Stationnements/BIXI                                                   1904
+2025-03-17 19:05:38|   0.5|  0.0|STATS |==============================================================================
+2025-03-17 19:05:38|   0.5|  0.0|STATS |Total Features Written                                                    1904
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |                            Features Read Summary
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |==============================================================================
+2025-03-17 19:05:38|   0.5|  0.0|STATS |Total Features Read                                                          0
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |                           Features Written Summary
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|STATS |TP2_Stationnements/BIXI                                                   1904
+2025-03-17 19:05:38|   0.5|  0.0|STATS |==============================================================================
+2025-03-17 19:05:38|   0.5|  0.0|STATS |Total Features Written                                                    1904
+2025-03-17 19:05:38|   0.5|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-03-17 19:05:38|   0.5|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2025-03-17 19:05:38|   0.5|  0.0|WARN  |-~                                                                             ~-
+2025-03-17 19:05:38|   0.5|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2025-03-17 19:05:38|   0.5|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2025-03-17 19:05:38|   0.5|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2025-03-17 19:05:38|   0.5|  0.0|WARN  |-~                                                                             ~-
+2025-03-17 19:05:38|   0.5|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2025-03-17 19:05:38|   0.5|  0.0|INFORM|Translation was SUCCESSFUL with 7 warning(s) (1904 feature(s) output)
+2025-03-17 19:05:38|   0.5|  0.0|INFORM|FME Session Duration: 4.2 seconds. (CPU: 0.4s user, 0.1s system)
+2025-03-17 19:05:38|   0.5|  0.0|INFORM|END - ProcessID: 7256, peak process memory usage: 96176 kB, current process memory usage: 96112 kB

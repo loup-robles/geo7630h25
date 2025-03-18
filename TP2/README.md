@@ -53,7 +53,7 @@ C’est donc dans ce contexte de réduction du nombre de voitures en ville que s
 
 Ce projet a été mené sous forme d’**analyse multicritères**. Nous avons mis en place une liste de critères, composés d’un ou plusieurs indicateurs, eux-mêmes composés d’une ou plusieurs données.
 
-Les **indicateurs en rouge** sont ceux que nous n’avons pas pu ou su utiliser, soit en raison de problèmes techniques, soit par manque de temps. Nous n’excluons cependant pas de les inclure ultérieurement pour bonifier notre analyse.
+Les **indicateurs en jaune** sont ceux que nous n’avons pas pu ou su utiliser, soit en raison de problèmes techniques, soit par manque de temps. Nous n’excluons cependant pas de les inclure ultérieurement pour bonifier notre analyse.
 
 ### Hypothèse de travail  
 Le postulat était que **là où il y avait une forte circulation** (importance des flux, concentration d’équipements routiers comme les feux de circulation), une bonne desserte en transport en commun, et où les indicateurs environnementaux (pollution de l’air, pollution sonore et îlots de chaleur urbains) étaient négatifs, **les places de stationnement doivent être enlevées**.
@@ -64,22 +64,22 @@ Le postulat était que **là où il y avait une forte circulation** (importance 
 
 | **Critères**              | **Indicateurs**                                    | **Données** |
 |--------------------------|-------------------------------------------------|------------|
-| 🌱 **Environnementaux**    | Pollution sonore                                | Mesure niveau acoustique |
-|                          | Présence d’îlots de chaleur (classe 4 et 5)     | Îlots de chaleur 2023 SHP |
-|                          | Qualité de l’air dégradée                        | Indice de la qualité de l’air |
+| 🌱 **Environnementaux**    | <mark>Pollution sonore                                | <mark> Mesure niveau acoustique |
+|                          | Présence d’îlots de chaleur (classe 5)     | Îlots de chaleur 2023 SHP |
+|                          | <mark>Qualité de l’air dégradée                        | <mark>Indice de la qualité de l’air |
 | 🚗 **Circulation**         | Artères principales                             | Réseau routier |
-|                          | Flux de trafic                                  | Entrave à la circulation |
-|                          | Feux de circulation                            | - |
-|                          | Déplacements Montréal trajet                   | - |
-|                          | Temps de parcours sur des segments             | Segments routiers, collecte des temps de parcours |
-|                          | Comptage des véhicules, cyclistes et piétons   | Intersections munies de feux de circulation |
-| 🅿️ **Stationnement**      | Présence de stationnements gratuits             | Signalisation stationnement sur rue |
-|                          | Stationnements gratuits et payants              | - |
+|                          | <mark>Flux de trafic                                  | <mark>Entrave à la circulation |
+|                          | <mark>Feux de circulation                            | - |
+|                          | <mark>Déplacements Montréal trajet                   | - |
+|                          | <mark>Temps de parcours sur des segments             | <mark>Segments routiers, collecte des temps de parcours |
+|                          | <mark>Comptage des véhicules, cyclistes et piétons   | <mark>Intersections munies de feux de circulation |
+| 🅿️ **Stationnement**      | <mark>Présence de stationnements gratuits             | <mark>Signalisation stationnement sur rue |
+|                          | <mark>Stationnements gratuits et payants              | - |
 |                          | Présence de stationnement                       | Stationnements municipaux tarifés, sur rue et hors rue |
 | 🚌 **Transport en commun et piétons** | Présence de pistes cyclables utilisées   | Réseau cyclable |
-|                          | Comptage des vélos sur la piste cyclable       | - |
-|                          | Réseau express vélo                            | - |
-|                          | Présence d’une rue piétonne ou partagée        | Rues piétonnes et partagées |
+|                          | - | <mark>Comptage des vélos sur la piste cyclable |
+|                          | - |  <mark>Réseau express vélo                             |
+|                          | <mark>Présence d’une rue piétonne ou partagée        | <mark>Rues piétonnes et partagées |
 |                          | Proximité d’un arrêt de bus à forte connectivité | Tracés et arrêts des lignes de bus et de métro |
 |                          | Proximité d’une station BIXI fortement utilisée | Historique des déplacements BIXI |
 

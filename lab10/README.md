@@ -1,5 +1,8 @@
 # Laboratoire 10 - GEO7630H25
+
+
 ## Configuration Geoserver et mise en place de services VTS et WFS
+
 
 ### **Étape 1 : Configuration et lancement d’une instance de Geoserver**
 

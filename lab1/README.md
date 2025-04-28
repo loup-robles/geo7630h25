@@ -1,4 +1,4 @@
-# **📚 Laboratoire 1**
+# **📚 Laboratoire 1**, Prise en main des outils
 ## **Étape 1, prise en main de GitHub**
 la premiere étape consiste à prendre en main l'interface de GitHub. On commence par se creér un compte pour y créer un répertoire (repositorie en anglais) dans lequel on archivera tous les laboratoires et travaux pratiques du cours. Ce répertoire sera le plus organisé possible en y créant des dossiers et les nommant, ainsi que les fichiers, avec une nomanclature logique. On créer le fichier "lab1". Les fichiers README sont crées et rempli pour la traçabilité de la démarche.
 

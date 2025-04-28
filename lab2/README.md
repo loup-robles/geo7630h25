@@ -1,4 +1,4 @@
-# **📚 Laboratoire 2**
+# **📚 Laboratoire 2**, Jointure et traitement des données géospatiales
 ## **Étape 1, ajouter les données**
 
 on commence ce laboratoire en ajoutant les données au FME. ici deux données sont utilisées : 

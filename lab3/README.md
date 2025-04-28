@@ -1,6 +1,4 @@
-# **📚 Laboratoire 3**
-
-# 🌳 Analyse de la densité arboricole des parcs 🌳
+# 🌳 Laboratoire 3 : Optimisation de la densité d’implantation d’arbres dans les parcs de Montréal (problématique fictive)
 
 ## **Étape 1**, ajouter les données au Workbench FME**
 

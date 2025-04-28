@@ -1,0 +1,152 @@
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Current FME version: FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|System Time: 20250115005313 UTC
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Form (floating)
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Temporary License: 168 days left.
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Machine host name is: C46390
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|OS Locale Name     : fr_CA
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1252
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'D:\Loup\7630h25\semaine2/'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'Lab1_FME.fmw'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.2.0.0'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 26100)
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Platform: WIN64
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|System Status: 717.20 GB of disk space available in the FME temporary folder (C:\Users\kg291979\AppData\Local\Temp\wbrun_1736896504823_9420\fmetmp_16)
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|System Status: 31.80 GB of physical memory available
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|System Status: 127.20 GB of virtual memory available
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|START - ProcessID: 12236, peak process memory usage: 43520 kB, current process memory usage: 43520 kB
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `D:\Loup\7630h25\semaine2\wb-xlate-1736902392171_9420' `--FME_LAUNCH_VIEWER_APP' `WORKBENCH' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LOG_FILENAME' `$(WORKSPACE_NAME).log' `LogCountServerName' `62578' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `62419'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\kg291979\AppData\Roaming\Safe Software\FME\'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;C:\Users\kg291979\Documents\FME\Formats
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\kg291979\AppData\Roaming\Safe Software\FME\Packages\24783-win64\transformers;C:\Program Files\FME\transformers
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\kg291979\Documents\FME\CoordinateSystems
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\kg291979\Documents\FME\CoordinateSystemExceptions
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\kg291979\Documents\FME\CoordinateSystemGridOverrides
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\kg291979\Documents\FME\CsmapTransformationExceptions
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\kg291979\Documents\FME\TransformerCategories
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `D:\Loup\7630h25\semaine2'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\kg291979\AppData\Local\Temp\wbrun_1736896504823_9420\fmetmp_16', set from environment variable `FME_TEMP'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\kg291979\AppData\Local\Temp'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 95.40 GB
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 71.55 GB
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Creating writer for format: 
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Creating reader for format: 
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Using MultiWriter with keyword `PRIMARY_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2025-01-14 19:53:13|   0.0|  0.0|INFORM|Emptying factory pipeline
+2025-01-14 19:53:13|   0.0|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2025-01-14 19:53:13|   0.0|  0.0|STATS |Unwanted Router Input Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-01-14 19:53:13|   0.0|  0.0|STATS |CSV_CSV2_2 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-01-14 19:53:13|   0.0|  0.0|STATS |Restoring 1 feature(s) from FME feature store file `C:\Users\kg291979\AppData\Local\Temp\wb-cache--FKJfBd\Main_VertexCreator -1 3 fo 0 OUTPUT  0  688bdf937c45b621dcb9db61327d224fc4578390.ffs'
+2025-01-14 19:53:13|   0.2|  0.2|INFORM|FME Configuration: Using connection values from 'BD_GEO7630H25' for POSTGIS_1
+2025-01-14 19:53:13|   0.2|  0.0|INFORM|Creating writer for format: PostGIS
+2025-01-14 19:53:13|   0.2|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `POSTGIS'
+2025-01-14 19:53:13|   0.2|  0.0|INFORM|Loaded module 'POSTGIS' from file 'C:\Program Files\FME\plugins/POSTGIS.dll'
+2025-01-14 19:53:13|   0.2|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (4.0 20240212)
+2025-01-14 19:53:13|   0.2|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2025-01-14 19:53:13|   0.2|  0.0|INFORM|Writer `POSTGIS_1' of type `POSTGIS' using group definition keyword `POSTGIS_1_DEF'
+2025-01-14 19:53:13|   0.2|  0.0|INFORM|Opening POSTGIS writer for dataset 'geo7630'...
+2025-01-14 19:53:15|   0.3|  0.1|INFORM|PostGIS client encoding: 'UTF8'
+2025-01-14 19:53:16|   0.3|  0.0|INFORM|PostgreSQL 16.3 on aarch64-unknown-linux-gnu, compiled by gcc (GCC) 7.3.1 20180712 (Red Hat 7.3.1-17), 64-bit
+2025-01-14 19:53:16|   0.3|  0.0|INFORM|3.4 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
+2025-01-14 19:53:16|   0.3|  0.0|INFORM|POSTGIS writer: Splitting bulk features into individual features
+2025-01-14 19:53:16|   0.6|  0.3|INFORM|Testing for the existence of table 'ROBL77290108.CODEMS_TABLE_1'...
+2025-01-14 19:53:17|   0.6|  0.0|INFORM|Dropping existing table 'ROBL77290108.CODEMS_TABLE_1'...
+2025-01-14 19:53:17|   0.6|  0.0|INFORM|Creating table 'ROBL77290108.CODEMS_TABLE_1'...
+2025-01-14 19:53:17|   0.6|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'ROBL77290108.CODEMS_TABLE_1'
+2025-01-14 19:53:17|   0.6|  0.0|INFORM|POSTGIS Writer: Creating 'streaming Bulk Copy' feature type processor for feature type 'ROBL77290108.CODEMS_TABLE_1'
+2025-01-14 19:53:17|   0.6|  0.0|INFORM|Committed transaction at feature '1000'
+2025-01-14 19:53:17|   0.6|  0.0|INFORM|Committed transaction at feature '2000'
+2025-01-14 19:53:17|   0.7|  0.1|INFORM|Committed transaction at feature '3000'
+2025-01-14 19:53:18|   0.8|  0.1|INFORM|Committed transaction at feature '4000'
+2025-01-14 19:53:18|   0.8|  0.0|INFORM|Committed transaction at feature '5000'
+2025-01-14 19:53:18|   0.9|  0.1|INFORM|Committed transaction at feature '6000'
+2025-01-14 19:53:18|   1.0|  0.1|INFORM|Committed transaction at feature '7000'
+2025-01-14 19:53:18|   1.0|  0.0|INFORM|Committed transaction at feature '8000'
+2025-01-14 19:53:18|   1.0|  0.0|INFORM|Committed transaction at feature '9000'
+2025-01-14 19:53:18|   1.1|  0.1|INFORM|Committed transaction at feature '10000'
+2025-01-14 19:53:19|   1.2|  0.1|INFORM|Committed transaction at feature '11000'
+2025-01-14 19:53:19|   1.2|  0.0|INFORM|Committed transaction at feature '12000'
+2025-01-14 19:53:19|   1.2|  0.0|INFORM|Committed transaction at feature '13000'
+2025-01-14 19:53:19|   1.3|  0.1|INFORM|Committed transaction at feature '14000'
+2025-01-14 19:53:19|   1.3|  0.0|INFORM|Committed transaction at feature '15000'
+2025-01-14 19:53:19|   1.3|  0.0|INFORM|Committed transaction at feature '16000'
+2025-01-14 19:53:19|   1.4|  0.1|INFORM|Committed transaction at feature '17000'
+2025-01-14 19:53:19|   1.4|  0.0|INFORM|Committed transaction at feature '18000'
+2025-01-14 19:53:19|   1.4|  0.0|INFORM|Committed transaction at feature '19000'
+2025-01-14 19:53:20|   1.5|  0.1|INFORM|Committed transaction at feature '20000'
+2025-01-14 19:53:20|   1.5|  0.0|INFORM|Committed transaction at feature '21000'
+2025-01-14 19:53:20|   1.6|  0.1|INFORM|Committed transaction at feature '22000'
+2025-01-14 19:53:20|   1.6|  0.0|INFORM|Committed transaction at feature '23000'
+2025-01-14 19:53:20|   1.6|  0.0|INFORM|Committed transaction at feature '24000'
+2025-01-14 19:53:20|   1.7|  0.1|INFORM|Committed transaction at feature '25000'
+2025-01-14 19:53:20|   1.8|  0.1|INFORM|Committed transaction at feature '26000'
+2025-01-14 19:53:20|   1.8|  0.0|INFORM|Committed transaction at feature '27000'
+2025-01-14 19:53:20|   1.8|  0.0|INFORM|Committed transaction at feature '28000'
+2025-01-14 19:53:20|   1.9|  0.1|INFORM|Committed transaction at feature '29000'
+2025-01-14 19:53:21|   1.9|  0.0|INFORM|Committed transaction at feature '30000'
+2025-01-14 19:53:21|   2.0|  0.1|INFORM|Committed transaction at feature '31000'
+2025-01-14 19:53:21|   2.0|  0.0|INFORM|Committed transaction at feature '32000'
+2025-01-14 19:53:21|   2.0|  0.0|INFORM|Committed transaction at feature '33000'
+2025-01-14 19:53:21|   2.1|  0.1|INFORM|Committed transaction at feature '34000'
+2025-01-14 19:53:21|   2.1|  0.0|INFORM|POSTGIS writer: 34926 of 48364 features written
+2025-01-14 19:53:21|   2.1|  0.0|INFORM|Committed transaction at feature '35000'
+2025-01-14 19:53:21|   2.2|  0.1|INFORM|Committed transaction at feature '36000'
+2025-01-14 19:53:21|   2.2|  0.0|INFORM|Committed transaction at feature '37000'
+2025-01-14 19:53:21|   2.3|  0.1|INFORM|Committed transaction at feature '38000'
+2025-01-14 19:53:22|   2.3|  0.0|INFORM|Committed transaction at feature '39000'
+2025-01-14 19:53:22|   2.3|  0.0|INFORM|Committed transaction at feature '40000'
+2025-01-14 19:53:22|   2.4|  0.1|INFORM|Committed transaction at feature '41000'
+2025-01-14 19:53:22|   2.4|  0.0|INFORM|Committed transaction at feature '42000'
+2025-01-14 19:53:22|   2.5|  0.1|INFORM|Committed transaction at feature '43000'
+2025-01-14 19:53:22|   2.5|  0.0|INFORM|Committed transaction at feature '44000'
+2025-01-14 19:53:22|   2.6|  0.1|INFORM|Committed transaction at feature '45000'
+2025-01-14 19:53:22|   2.6|  0.0|INFORM|Committed transaction at feature '46000'
+2025-01-14 19:53:22|   2.7|  0.1|INFORM|Committed transaction at feature '47000'
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|Committed transaction at feature '48000'
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|POSTGIS writer: 48364 of 48364 features written
+2025-01-14 19:53:23|   2.7|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 48364 input feature(s), wrote 48364 output feature(s): 0 matched merge filters, 48364 were routed to output, 0 could not be routed.
+2025-01-14 19:53:23|   2.7|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|Creating 'GIST' index on column "geom" of table 'ROBL77290108.CODEMS_TABLE_1'...
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|Successfully closed POSTGIS database writer
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|Feature output statistics for `POSTGIS' writer using keyword `POSTGIS_1':
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |                               Features Written
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |ROBL77290108.CODEMS_TABLE_1                                              48364
+2025-01-14 19:53:23|   2.7|  0.0|STATS |==============================================================================
+2025-01-14 19:53:23|   2.7|  0.0|STATS |Total Features Written                                                   48364
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |                            Features Read Summary
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |==============================================================================
+2025-01-14 19:53:23|   2.7|  0.0|STATS |Total Features Read                                                          0
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |                           Features Written Summary
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|STATS |ROBL77290108.CODEMS_TABLE_1                                              48364
+2025-01-14 19:53:23|   2.7|  0.0|STATS |==============================================================================
+2025-01-14 19:53:23|   2.7|  0.0|STATS |Total Features Written                                                   48364
+2025-01-14 19:53:23|   2.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-01-14 19:53:23|   2.7|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2025-01-14 19:53:23|   2.7|  0.0|WARN  |-~                                                                             ~-
+2025-01-14 19:53:23|   2.7|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2025-01-14 19:53:23|   2.7|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2025-01-14 19:53:23|   2.7|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2025-01-14 19:53:23|   2.7|  0.0|WARN  |-~                                                                             ~-
+2025-01-14 19:53:23|   2.7|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|Translation was SUCCESSFUL with 7 warning(s) (48364 feature(s) output)
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|FME Session Duration: 9.9 seconds. (CPU: 2.4s user, 0.3s system)
+2025-01-14 19:53:23|   2.7|  0.0|INFORM|END - ProcessID: 12236, peak process memory usage: 103844 kB, current process memory usage: 103784 kB

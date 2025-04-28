@@ -1,0 +1,96 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carte de Montréal – Ali & Loup</title>
+ 
+  <!-- MapLibre CSS -->
+  <link
+    href="https://unpkg.com/maplibre-gl@^5.3.0/dist/maplibre-gl.css"
+    rel="stylesheet"
+  />
+ 
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+ 
+  <!-- Votre CSS séparé -->
+  <link href="app.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img
+      src="https://geo.uqam.ca/wp-content/uploads/sites/70/2018/09/lg-Departement-geographie-interne-COUL.jpg"
+      alt="Logo UQAM Géographie"
+      style="height: 50px;"
+    >
+
+    <h1>
+      Analyse de la non-pertinence des cases de stationnements dans le centre-ville de Montréal.
+      <span class="auteurs">Par Ali & Loup</span>
+    </h1>
+  </header>
+ 
+  <div id="container">
+    <aside id="controls">
+      <!-- Section Données -->
+      <div class="section">
+        <h5><strong>Données</strong></h5>
+        <div id="donnees">
+          <select id="donneesSelect" class="form-select">
+            <option value="stationnements-layer">Stationnements</option>
+            <option value="stationnements-bixi-layer">Stationnements proche d'une station BIXI à haute fréquence</option>
+            <option value="stationnements-bus-layer">Stationnement proche d'arrêt de bus à haute fréquence</option>
+            <option value="stationnements-routes-layer">Stationnements sur une routes principale</option>
+            <option value="stationnements-icu-layer">Stationnement dans un ilôt de chaleur</option>
+            <option value="stationnements-cyclables-layer">Stationnement proche d'une voie cyclable protégée</option>
+          </select>
+        </div>
+      </div>
+    
+      <!-- Section Habillage de la carte -->
+      <div class="section">
+        <h5><strong>Habillage de la carte</strong></h5>
+        <button id="btn-basemap" class="btn btn-primary btn-full">Fond de carte</button>
+        <button id="btn-batiment3d" class="btn btn-info btn-full">Bâtiments 3D</button>
+      </div>
+    
+      <!-- Section Résultats -->
+      <div class="section">
+        <h5><strong>Résultats</strong></h5>
+        <button id="btn-pertinence" class="btn btn-danger btn-full">Indice de non-pertinence du stationnement</button>
+        <button id="btn-histogram" class="btn btn-warning btn-full">Histogramme</button>
+        <!-- Bouton ajouté : Heatmap -->
+        <button id="btn-heatmap" class="btn btn-secondary btn-full">Heatmap</button>
+        <button id="statsBtn" class="btn btn-outline-success btn-full">Nombre de points : 0</button>
+      </div>
+    
+      <div id="legend" class="legend"><strong>Légende</strong></div>
+      <div id="stats" class="stats">
+        <strong>Statistiques</strong>
+        <ul></ul>
+      </div>
+      <canvas id="histogram"></canvas>
+      <div id="explanation">
+        <strong>Fonction :</strong>
+        <p id="explain-text"></p>
+      </div>
+    </aside>      
+ 
+    <main>
+      <div id="map"></div>
+    </main>
+  </div>
+ 
+  <!-- Librairies JS externes -->
+  <script src="https://unpkg.com/maplibre-gl@^5.3.0/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Votre JS séparé -->
+  <script src="app.js"></script>
+  <script src="map-controls.js"></script>
+</body>
+</html>

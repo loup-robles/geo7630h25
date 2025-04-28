@@ -1,0 +1,101 @@
+/* app.css (inchangé) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+}
+header {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  color: white;
+  padding: 1rem;
+  height: 68px;
+}
+header img {
+  height: 40px;
+  margin-right: 1rem;
+}
+#container {
+  display: flex;
+  position: absolute;
+  top: 68px;
+  bottom: 0;
+  width: 100%;
+}
+aside#controls {
+  width: 420px;
+  background: #f8f9fa;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  overflow-y: auto;
+}
+#donnees {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+#donneesSelect,
+#statsBtn,
+.btn-full {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.legend,
+.stats,
+#explanation {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.stats ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.active-btn {
+  background-color: #6c757d;
+  color: white !important;
+}
+#histogram {
+  display: none;
+  width: 100%;
+  height: 80px;
+  margin-top: 0.5rem;
+}
+main {
+  flex: 1;
+  position: relative;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.section {
+  margin-bottom: 1.5rem;
+}
+h1 {
+  text-align: center;  /* Centre le texte */
+  color: #a41b63ff;      /* Change la couleur du titre */
+  margin: 0;           /* Enlève les marges par défaut */
+  padding: 20px 0;     /* Ajoute un peu de padding autour du titre */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative; /* Nécessaire pour positionner l’auteur */
+}
+h1 .auteurs {
+  position: absolute;
+  right: -450px;
+  bottom: 0;
+  font-size: 18px;
+  font-weight: normal;
+}

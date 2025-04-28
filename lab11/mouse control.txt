@@ -1,0 +1,19 @@
+map.on('mouseenter', 'commerces', () => {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+  
+  map.on('mouseleave', 'commerces', () => {
+    map.getCanvas().style.cursor = '';
+  });
+  
+  map.on('click', 'commerces', (e) => {
+    var coords = e.features[0].geometry.coordinates;
+    var props = e.features[0].properties;
+  
+    new maplibregl.Popup()
+      .setLngLat(coords)
+      .setHTML(`<strong>${props.nom}</strong><br>Type : ${props.type}`)
+      .addTo(map);
+  
+    map.flyTo({ center: coords, zoom: 14 });
+  });

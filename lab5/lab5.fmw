@@ -1,0 +1,2334 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" D:\Loup\7630h25\semaine5\lab5.fmw
+#          --SourceDataset_LAS_9 "$(FME_MF_DIR)data\LiDAR\300-5040_2015.laz"
+#          --SourceDataset_LAS_7 "$(FME_MF_DIR)data\LiDAR\300-5041_2015.laz"
+#          --SourceDataset_LAS_11 "$(FME_MF_DIR)data\LiDAR\301-5039_2015.laz"
+#          --SourceDataset_LAS_8 "$(FME_MF_DIR)data\LiDAR\301-5040_2015.laz"
+#          --SourceDataset_LAS_10 "$(FME_MF_DIR)data\LiDAR\301-5041_2015.laz"
+#          --SourceDataset_LAS "$(FME_MF_DIR)data\LiDAR\300-5039_2015.laz"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3343.98 2112.39"
+#!   DOC_TOP_LEFT="-48.4961 -1861.13"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="24783"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="c5467db5-f779-40ea-ac0e-8e9b004bd867"
+#!   FME_DOCUMENT_PRIORGUID="c7bc6815-cdba-4bd1-b06d-42c5e2c9fa91,f3d93c7a-2b63-4da9-9949-33084d0130c6,163539ba-6ade-463c-bf23-7f9d2de5b8b9"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+#!   LAST_SAVE_DATE="2025-02-11T20:45:51"
+#!   LOG_FILE="$(WORKSPACE_NAME).log"
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="312"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-683.601 421.879"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="80"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="LAS"
+#!   DATASET="$(SourceDataset_LAS_9)"
+#!   KEYWORD="LAS_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) las_file_creation_date date las_file_source_id number(6,0) las_generating_software char(32) las_gps_time_type number(1,0) las_project_id char(36) las_synthetic_returns logical las_system_identifier char(32) las_type char(255) las_version char(3) las_vertical_coordsys_code number(6,0) las_vertical_datum_code number(6,0) las_vertical_units_code number(6,0) las_zlas_rearranged_points logical multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="LAS_OUT_ARCGIS_LAS_DATASET LAS_OUT_COMPUTE_STATISTICS_ON_ARCGIS_LAS_DATASET LAS_OUT_ZLAS_REARRANGE_POINTS LAS_OUT_ZLAS_POINT_SPACING_SOURCE LAS_OUT_ZLAS_POINT_SPACING_VALUE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="LAS File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the LAS Dataset(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the LAS file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="LAS"
+#!   DATASET="$(SourceDataset_LAS_7)"
+#!   KEYWORD="LAS_3"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) las_file_creation_date date las_file_source_id number(6,0) las_generating_software char(32) las_gps_time_type number(1,0) las_project_id char(36) las_synthetic_returns logical las_system_identifier char(32) las_type char(255) las_version char(3) las_vertical_coordsys_code number(6,0) las_vertical_datum_code number(6,0) las_vertical_units_code number(6,0) las_zlas_rearranged_points logical multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="LAS_OUT_ARCGIS_LAS_DATASET LAS_OUT_COMPUTE_STATISTICS_ON_ARCGIS_LAS_DATASET LAS_OUT_ZLAS_REARRANGE_POINTS LAS_OUT_ZLAS_POINT_SPACING_SOURCE LAS_OUT_ZLAS_POINT_SPACING_VALUE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="LAS File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the LAS Dataset(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the LAS file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="LAS"
+#!   DATASET="$(SourceDataset_LAS_11)"
+#!   KEYWORD="LAS_4"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) las_file_creation_date date las_file_source_id number(6,0) las_generating_software char(32) las_gps_time_type number(1,0) las_project_id char(36) las_synthetic_returns logical las_system_identifier char(32) las_type char(255) las_version char(3) las_vertical_coordsys_code number(6,0) las_vertical_datum_code number(6,0) las_vertical_units_code number(6,0) las_zlas_rearranged_points logical multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="LAS_OUT_ARCGIS_LAS_DATASET LAS_OUT_COMPUTE_STATISTICS_ON_ARCGIS_LAS_DATASET LAS_OUT_ZLAS_REARRANGE_POINTS LAS_OUT_ZLAS_POINT_SPACING_SOURCE LAS_OUT_ZLAS_POINT_SPACING_VALUE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="LAS File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the LAS Dataset(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the LAS file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="LAS"
+#!   DATASET="$(SourceDataset_LAS_8)"
+#!   KEYWORD="LAS_5"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) las_file_creation_date date las_file_source_id number(6,0) las_generating_software char(32) las_gps_time_type number(1,0) las_project_id char(36) las_synthetic_returns logical las_system_identifier char(32) las_type char(255) las_version char(3) las_vertical_coordsys_code number(6,0) las_vertical_datum_code number(6,0) las_vertical_units_code number(6,0) las_zlas_rearranged_points logical multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="LAS_OUT_ARCGIS_LAS_DATASET LAS_OUT_COMPUTE_STATISTICS_ON_ARCGIS_LAS_DATASET LAS_OUT_ZLAS_REARRANGE_POINTS LAS_OUT_ZLAS_POINT_SPACING_SOURCE LAS_OUT_ZLAS_POINT_SPACING_VALUE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="LAS File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the LAS Dataset(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the LAS file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="LAS"
+#!   DATASET="$(SourceDataset_LAS_10)"
+#!   KEYWORD="LAS_6"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) las_file_creation_date date las_file_source_id number(6,0) las_generating_software char(32) las_gps_time_type number(1,0) las_project_id char(36) las_synthetic_returns logical las_system_identifier char(32) las_type char(255) las_version char(3) las_vertical_coordsys_code number(6,0) las_vertical_datum_code number(6,0) las_vertical_units_code number(6,0) las_zlas_rearranged_points logical multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="LAS_OUT_ARCGIS_LAS_DATASET LAS_OUT_COMPUTE_STATISTICS_ON_ARCGIS_LAS_DATASET LAS_OUT_ZLAS_REARRANGE_POINTS LAS_OUT_ZLAS_POINT_SPACING_SOURCE LAS_OUT_ZLAS_POINT_SPACING_VALUE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="LAS File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the LAS Dataset(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the LAS file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="LAS"
+#!   DATASET="$(SourceDataset_LAS)"
+#!   KEYWORD="LAS_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis number(31,15) fme_rotation number(31,15) fme_secondary_axis number(31,15) fme_start_angle number(31,15) fme_sweep_angle number(31,15) fme_text_size number(31,15) fme_text_string char(50) fme_type char(50) las_file_creation_date date las_file_source_id number(6,0) las_generating_software char(32) las_gps_time_type number(1,0) las_project_id char(36) las_synthetic_returns logical las_system_identifier char(32) las_type char(255) las_version char(3) las_vertical_coordsys_code number(6,0) las_vertical_datum_code number(6,0) las_vertical_units_code number(6,0) las_zlas_rearranged_points logical multi_reader_full_id number(11,0) multi_reader_id number(11,0) multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEURLDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="24783"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="LAS_OUT_ARCGIS_LAS_DATASET LAS_OUT_COMPUTE_STATISTICS_ON_ARCGIS_LAS_DATASET LAS_OUT_ZLAS_REARRANGE_POINTS LAS_OUT_ZLAS_POINT_SPACING_SOURCE LAS_OUT_ZLAS_POINT_SPACING_VALUE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="LAS File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the LAS Dataset(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the LAS file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="LAS"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="LAS"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="las_point_cloud"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="las_point_cloud"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="LAS"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="LAS"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="LAS"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="las_point_cloud"
+#!   POSITION="51.50387503875038 -340.62515625156243"
+#!   BOUNDING_RECT="51.50387503875038 -340.62515625156243 436 65"
+#!   ORDER="500000000000023"
+#!   COLLAPSED="true"
+#!   KEYWORD="LAS_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="LAS"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="9"
+#!   FEAT_GEOMTYPE="las_point_cloud"
+#!   POSITION="51.50387503875038 -639.37909379093799"
+#!   BOUNDING_RECT="51.50387503875038 -639.37909379093799 436 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="LAS_3"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="LAS"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="11"
+#!   FEAT_GEOMTYPE="las_point_cloud"
+#!   POSITION="51.50387503875038 -1013.3359790561908"
+#!   BOUNDING_RECT="51.50387503875038 -1013.3359790561908 436 65"
+#!   ORDER="500000000000010"
+#!   COLLAPSED="true"
+#!   KEYWORD="LAS_4"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="LAS"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="13"
+#!   FEAT_GEOMTYPE="las_point_cloud"
+#!   POSITION="51.50387503875038 -1377.5468785188941"
+#!   BOUNDING_RECT="51.50387503875038 -1377.5468785188941 436 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="LAS_5"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="LAS"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="15"
+#!   FEAT_GEOMTYPE="las_point_cloud"
+#!   POSITION="51.50387503875038 -1704.4322369323502"
+#!   BOUNDING_RECT="51.50387503875038 -1704.4322369323502 436 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="LAS_6"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="LAS"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="47"
+#!   FEAT_GEOMTYPE="las_point_cloud"
+#!   POSITION="51.50387503875038 74.690546905468992"
+#!   BOUNDING_RECT="51.50387503875038 74.690546905468992 436 65"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="LAS_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="LAS_1"
+#!   OVERRIDE="-LAS_1_DATASET"
+#!   DATASET="LAS_1/300-5039_2015.laz"
+#! />
+#! <DATASET
+#!   NAME="LAS_2"
+#!   OVERRIDE="-LAS_2_DATASET"
+#!   DATASET="LAS_2/300-5040_2015.laz"
+#! />
+#! <DATASET
+#!   NAME="LAS_3"
+#!   OVERRIDE="-LAS_3_DATASET"
+#!   DATASET="LAS_3/300-5041_2015.laz"
+#! />
+#! <DATASET
+#!   NAME="LAS_4"
+#!   OVERRIDE="-LAS_4_DATASET"
+#!   DATASET="LAS_4/301-5039_2015.laz"
+#! />
+#! <DATASET
+#!   NAME="LAS_5"
+#!   OVERRIDE="-LAS_5_DATASET"
+#!   DATASET="LAS_5/301-5040_2015.laz"
+#! />
+#! <DATASET
+#!   NAME="LAS_6"
+#!   OVERRIDE="-LAS_6_DATASET"
+#!   DATASET="LAS_6/301-5041_2015.laz"
+#! />
+#! </READER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_9 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\300-5040_2015.laz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_7 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\300-5041_2015.laz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_11 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\301-5039_2015.laz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_8 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\301-5040_2015.laz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_10 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\301-5041_2015.laz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\300-5039_2015.laz"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiU291cmNlRGF0YXNldF9MQVNfOSIsInByb21wdCI6IlNvdXJjZSBBU1BSUyBMQVMgRmlsZShzKToiLCJ2YWx1ZVR5cGUiOiJzdHJpbmciLCJyZXF1aXJlZCI6dHJ1ZSwiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSKWRhdGFcXExpREFSXFwzMDAtNTA0MF8yMDE1LmxheiIsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwic2VsZWN0TXVsdGlwbGUiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsImFjY2Vzc01vZGUiOiJyZWFkIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJMQVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXMiLCIqLmxheiIsIiouemxhcyIsIioubGFzZCJdfSx7ImRlc2NyaXB0aW9uIjoiTEFTIEZpbGVzIiwiZmlsdGVyIjpbIioubGFzIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIExBUyBGaWxlcyIsImZpbHRlciI6WyIqLmxheiJdfSx7ImRlc2NyaXB0aW9uIjoiRXNyaSBPcHRpbWl6ZWQgTEFTIEZpbGVzIiwiZmlsdGVyIjpbIiouemxhcyJdfSx7ImRlc2NyaXB0aW9uIjoiRXNyaSBMQVMgRGF0YXNldCBGaWxlcyIsImZpbHRlciI6WyIqLmxhc2QiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XX0seyJuYW1lIjoiU291cmNlRGF0YXNldF9MQVNfNyIsInByb21wdCI6IlNvdXJjZSBBU1BSUyBMQVMgRmlsZShzKToiLCJ2YWx1ZVR5cGUiOiJzdHJpbmciLCJyZXF1aXJlZCI6dHJ1ZSwiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSKWRhdGFcXExpREFSXFwzMDAtNTA0MV8yMDE1LmxheiIsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwic2VsZWN0TXVsdGlwbGUiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsImFjY2Vzc01vZGUiOiJyZWFkIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJMQVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXMiLCIqLmxheiIsIiouemxhcyIsIioubGFzZCJdfSx7ImRlc2NyaXB0aW9uIjoiTEFTIEZpbGVzIiwiZmlsdGVyIjpbIioubGFzIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIExBUyBGaWxlcyIsImZpbHRlciI6WyIqLmxheiJdfSx7ImRlc2NyaXB0aW9uIjoiRXNyaSBPcHRpbWl6ZWQgTEFTIEZpbGVzIiwiZmlsdGVyIjpbIiouemxhcyJdfSx7ImRlc2NyaXB0aW9uIjoiRXNyaSBMQVMgRGF0YXNldCBGaWxlcyIsImZpbHRlciI6WyIqLmxhc2QiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XX0seyJuYW1lIjoiU291cmNlRGF0YXNldF9MQVNfMTEiLCJwcm9tcHQiOiJTb3VyY2UgQVNQUlMgTEFTIEZpbGUocyk6IiwidmFsdWVUeXBlIjoic3RyaW5nIiwicmVxdWlyZWQiOnRydWUsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUilkYXRhXFxMaURBUlxcMzAxLTUwMzlfMjAxNS5sYXoiLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJhY2Nlc3NNb2RlIjoicmVhZCIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiTEFTIEZpbGVzIiwiZmlsdGVyIjpbIioubGFzIiwiKi5sYXoiLCIqLnpsYXMiLCIqLmxhc2QiXX0seyJkZXNjcmlwdGlvbiI6IkxBUyBGaWxlcyIsImZpbHRlciI6WyIqLmxhcyJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBMQVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXoiXX0seyJkZXNjcmlwdGlvbiI6IkVzcmkgT3B0aW1pemVkIExBUyBGaWxlcyIsImZpbHRlciI6WyIqLnpsYXMiXX0seyJkZXNjcmlwdGlvbiI6IkVzcmkgTEFTIERhdGFzZXQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXNkIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV19LHsibmFtZSI6IlNvdXJjZURhdGFzZXRfTEFTXzgiLCJwcm9tcHQiOiJTb3VyY2UgQVNQUlMgTEFTIEZpbGUocyk6IiwidmFsdWVUeXBlIjoic3RyaW5nIiwicmVxdWlyZWQiOnRydWUsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUilkYXRhXFxMaURBUlxcMzAxLTUwNDBfMjAxNS5sYXoiLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJhY2Nlc3NNb2RlIjoicmVhZCIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiTEFTIEZpbGVzIiwiZmlsdGVyIjpbIioubGFzIiwiKi5sYXoiLCIqLnpsYXMiLCIqLmxhc2QiXX0seyJkZXNjcmlwdGlvbiI6IkxBUyBGaWxlcyIsImZpbHRlciI6WyIqLmxhcyJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBMQVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXoiXX0seyJkZXNjcmlwdGlvbiI6IkVzcmkgT3B0aW1pemVkIExBUyBGaWxlcyIsImZpbHRlciI6WyIqLnpsYXMiXX0seyJkZXNjcmlwdGlvbiI6IkVzcmkgTEFTIERhdGFzZXQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXNkIl19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgZmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV19LHsibmFtZSI6IlNvdXJjZURhdGFzZXRfTEFTXzEwIiwicHJvbXB0IjoiU291cmNlIEFTUFJTIExBUyBGaWxlKHMpOiIsInZhbHVlVHlwZSI6InN0cmluZyIsInJlcXVpcmVkIjp0cnVlLCJkZWZhdWx0VmFsdWUiOiIkKEZNRV9NRl9ESVIpZGF0YVxcTGlEQVJcXDMwMS01MDQxXzIwMTUubGF6Iiwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwiYWNjZXNzTW9kZSI6InJlYWQiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkxBUyBGaWxlcyIsImZpbHRlciI6WyIqLmxhcyIsIioubGF6IiwiKi56bGFzIiwiKi5sYXNkIl19LHsiZGVzY3JpcHRpb24iOiJMQVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXMiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgTEFTIEZpbGVzIiwiZmlsdGVyIjpbIioubGF6Il19LHsiZGVzY3JpcHRpb24iOiJFc3JpIE9wdGltaXplZCBMQVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi56bGFzIl19LHsiZGVzY3JpcHRpb24iOiJFc3JpIExBUyBEYXRhc2V0IEZpbGVzIiwiZmlsdGVyIjpbIioubGFzZCJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dfSx7Im5hbWUiOiJTb3VyY2VEYXRhc2V0X0xBUyIsInByb21wdCI6IlNvdXJjZSBBU1BSUyBMQVMgRmlsZShzKToiLCJ2YWx1ZVR5cGUiOiJzdHJpbmciLCJyZXF1aXJlZCI6dHJ1ZSwiZGVmYXVsdFZhbHVlIjoiJChGTUVfTUZfRElSKWRhdGFcXExpREFSXFwzMDAtNTAzOV8yMDE1LmxheiIsInR5cGUiOiJmaWxlIiwic2VsZWN0TXVsdGlwbGUiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsImFjY2Vzc01vZGUiOiJyZWFkIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJMQVMgRmlsZXMiLCJmaWx0ZXIiOlsiKi5sYXMiLCIqLmxheiIsIiouemxhcyIsIioubGFzZCJdfSx7ImRlc2NyaXB0aW9uIjoiTEFTIEZpbGVzIiwiZmlsdGVyIjpbIioubGFzIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIExBUyBGaWxlcyIsImZpbHRlciI6WyIqLmxheiJdfSx7ImRlc2NyaXB0aW9uIjoiRXNyaSBPcHRpbWl6ZWQgTEFTIEZpbGVzIiwiZmlsdGVyIjpbIiouemxhcyJdfSx7ImRlc2NyaXB0aW9uIjoiRXNyaSBMQVMgRGF0YXNldCBGaWxlcyIsImZpbHRlciI6WyIqLmxhc2QiXX0seyJkZXNjcmlwdGlvbiI6IkFyY2hpdmUgRmlsZXMiLCJmaWx0ZXIiOlsiKi43eiIsIiouN3ppcCIsIioucmFyIiwiKi5ydnoiLCIqLnRhciIsIioudGFyLmJ6MiIsIioudGFyLmd6IiwiKi50Z3oiLCIqLnppcCIsIiouemlweCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBGaWxlcyIsImZpbHRlciI6WyIqLmJ6MiIsIiouZ3oiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XX1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_LAS_9" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\300-5040_2015.laz"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_9 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#! />
+#!     <INFO NAME="SourceDataset_LAS_7" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\300-5041_2015.laz"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_7 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#! />
+#!     <INFO NAME="SourceDataset_LAS_11" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\301-5039_2015.laz"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_11 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#! />
+#!     <INFO NAME="SourceDataset_LAS_8" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\301-5040_2015.laz"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_8 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#! />
+#!     <INFO NAME="SourceDataset_LAS_10" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\301-5041_2015.laz"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS_10 INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#! />
+#!     <INFO NAME="SourceDataset_LAS" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)data\LiDAR\300-5039_2015.laz"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_LAS INCLUDE_WEB_BROWSER%LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_files(*)|* Source ASPRS LAS File(s):"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! <BOOKMARK
+#!   IDENTIFIER="7"
+#!   NAME="300-5040"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1.5038750387503796 -253.75018750187496"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR="Workflow2"
+#!   BOTTOM_RIGHT="537.50387503875038 -438.75018750187496"
+#!   BOUNDING_RECT="1.5038750387503796 -253.75018750187496 536 185"
+#!   STICKY="true"
+#!   COLOUR="0.58039215686274515,0.65490196078431373,1,1"
+#!   CONTENTS="3 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="10"
+#!   NAME="300-5039"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1.5038750387503796 -549.37909379093799"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR="Workflow3"
+#!   BOTTOM_RIGHT="537.50387503875038 -734.37909379093799"
+#!   BOUNDING_RECT="1.5038750387503796 -549.37909379093799 536 185"
+#!   STICKY="true"
+#!   COLOUR="0.67843137254901964,0.80784313725490198,0.72941176470588232,1"
+#!   CONTENTS="9 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="12"
+#!   NAME="301-5041"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1.5038750387503796 -923.33597905619081"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR="Workflow1"
+#!   BOTTOM_RIGHT="537.50387503875038 -1126.7036102633672"
+#!   BOUNDING_RECT="1.5038750387503796 -923.33597905619081 536 203.36763120717637"
+#!   STICKY="true"
+#!   COLOUR="0.32549019607843138,0.62352941176470589,0.92549019607843142,1"
+#!   CONTENTS="11 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="14"
+#!   NAME="301-5040"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1.5038750387503796 -1287.5468785188941"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR="Workflow2"
+#!   BOTTOM_RIGHT="537.50387503875038 -1472.5468785188941"
+#!   BOUNDING_RECT="1.5038750387503796 -1287.5468785188941 536 185"
+#!   STICKY="true"
+#!   COLOUR="0.58039215686274515,0.65490196078431373,1,1"
+#!   CONTENTS="13 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="16"
+#!   NAME="301-5039"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="1.5038750387503796 -1614.4322369323502"
+#!   ORDER="500000000000013.13"
+#!   PALETTE_COLOR="Workflow3"
+#!   BOTTOM_RIGHT="537.50387503875038 -1799.4322369323502"
+#!   BOUNDING_RECT="1.5038750387503796 -1614.4322369323502 536 185"
+#!   STICKY="true"
+#!   COLOUR="0.67843137254901964,0.80784313725490198,0.72941176470588232,1"
+#!   CONTENTS="15 "
+#! >
+#! </BOOKMARK>
+#! <BOOKMARK
+#!   IDENTIFIER="27"
+#!   NAME="Importation et nettoyage des nuages de points"
+#!   DESCRIPTION=""
+#!   TOP_LEFT="-48.49612496124962 251.25431254312548"
+#!   ORDER="500000000000013"
+#!   PALETTE_COLOR="Workflow1"
+#!   BOTTOM_RIGHT="3295.4875003295483 -1861.1341006916325"
+#!   BOUNDING_RECT="-48.49612496124962 251.25431254312548 3343.983625290798 2112.388413234758"
+#!   STICKY="true"
+#!   COLOUR="0.32549019607843138,0.62352941176470589,0.92549019607843142,1"
+#!   CONTENTS="11 25 16 20 13 34 6 14 48 32 7 39 24 35 41 36 42 17 45 47 19 12 33 46 30 31 37 23 38 22 10 40 3 26 21 43 18 9 29 15 44 28 "
+#! >
+#! </BOOKMARK>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="PointCloudThinner"
+#!   VERSION="2"
+#!   POSITION="779.97939070299822 161.25431254312548"
+#!   BOUNDING_RECT="779.97939070299822 161.25431254312548 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="THINNED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INTERVAL" PARM_VALUE="30"/>
+#!     <XFORM_PARM PARM_NAME="MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="KEEPNPOINT"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="Every Nth point (Interval)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="PointCloudThinner"
+#!   VERSION="2"
+#!   POSITION="779.97939070299822 -193.75018750187496"
+#!   BOUNDING_RECT="779.97939070299822 -193.75018750187496 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="THINNED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INTERVAL" PARM_VALUE="30"/>
+#!     <XFORM_PARM PARM_NAME="MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="KEEPNPOINT"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_2"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="Every Nth point (Interval)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="19"
+#!   TYPE="PointCloudThinner"
+#!   VERSION="2"
+#!   POSITION="779.97939070299822 -549.37909379093799"
+#!   BOUNDING_RECT="779.97939070299822 -549.37909379093799 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="THINNED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INTERVAL" PARM_VALUE="30"/>
+#!     <XFORM_PARM PARM_NAME="MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="KEEPNPOINT"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_3"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="Every Nth point (Interval)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="PointCloudThinner"
+#!   VERSION="2"
+#!   POSITION="779.97939070299822 -881.70361026336718"
+#!   BOUNDING_RECT="779.97939070299822 -881.70361026336718 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="THINNED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INTERVAL" PARM_VALUE="30"/>
+#!     <XFORM_PARM PARM_NAME="MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="KEEPNPOINT"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_4"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="Every Nth point (Interval)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="23"
+#!   TYPE="PointCloudThinner"
+#!   VERSION="2"
+#!   POSITION="779.97939070299822 -1255.6577547256957"
+#!   BOUNDING_RECT="779.97939070299822 -1255.6577547256957 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="THINNED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INTERVAL" PARM_VALUE="30"/>
+#!     <XFORM_PARM PARM_NAME="MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="KEEPNPOINT"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_5"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="Every Nth point (Interval)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="25"
+#!   TYPE="PointCloudThinner"
+#!   VERSION="2"
+#!   POSITION="779.97939070299822 -1586.1341006916325"
+#!   BOUNDING_RECT="779.97939070299822 -1586.1341006916325 436 65"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="THINNED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="INTERVAL" PARM_VALUE="30"/>
+#!     <XFORM_PARM PARM_NAME="MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE" PARM_VALUE="KEEPNPOINT"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_6"/>
+#!     <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_IS_LOOKUP="true" PARM_VALUE="Every Nth point (Interval)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="28"
+#!   TYPE="PointCloudCombiner"
+#!   VERSION="6"
+#!   POSITION="2446.6708081714969 -881.70361026336718"
+#!   BOUNDING_RECT="2446.6708081714969 -881.70361026336718 444 65"
+#!   ORDER="500000000000014"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS" PARM_VALUE="yes"/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_PRESERVE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRS_TO_PRESERVE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="EXTRACT_RASTER_NODATA" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="MEASURES_TO_PRESERVE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="MEASURES_TO_PRESERVE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="RASTER_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SPACING" PARM_VALUE="1.0"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VECTOR_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudCombiner"/>
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_IS_LOOKUP="true" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="EXTRACT_RASTER_NODATA_NAME" PARM_IS_LOOKUP="true" PARM_VALUE="No"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="29"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="1361.7115553417177 -25.336312454033617"
+#!   BOUNDING_RECT="1361.7115553417177 -25.336312454033617 682 65"
+#!   ORDER="500000000000015"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner__Rejected_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="31"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="1361.7115553417177 -364.37909379093799"
+#!   BOUNDING_RECT="1361.7115553417177 -364.37909379093799 721 65"
+#!   ORDER="500000000000016"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_2__Rejected_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="33"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="1361.7115553417177 -734.37909379093799"
+#!   BOUNDING_RECT="1361.7115553417177 -734.37909379093799 721 65"
+#!   ORDER="500000000000017"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_3__Rejected_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="35"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="1361.7115553417177 -1013.3359790561908"
+#!   BOUNDING_RECT="1361.7115553417177 -1013.3359790561908 722 65"
+#!   ORDER="500000000000018"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_4__Rejected_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="37"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="1322.7115553417175 -1343.3110702832414"
+#!   BOUNDING_RECT="1322.7115553417175 -1343.3110702832414 721 65"
+#!   ORDER="500000000000019"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_5__Rejected_"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="39"
+#!   TYPE="Logger"
+#!   VERSION="4"
+#!   POSITION="1322.7115553417177 -1646.1341006916325"
+#!   BOUNDING_RECT="1322.7115553417177 -1646.1341006916325 721 65"
+#!   ORDER="500000000000020"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="24783"
+#! >
+#!     <OUTPUT_FEAT NAME="LOGGED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LOG_FEATURE" PARM_VALUE="LOG_ONLY"/>
+#!     <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#!     <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#!     <XFORM_PARM PARM_NAME="MSG_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SEVERITY" PARM_VALUE="INFO"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="PointCloudThinner_6__Rejected_"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="24"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="23"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="26"
+#!   SOURCE_NODE="15"
+#!   TARGET_NODE="25"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="47"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 THINNED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 THINNED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="43"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 THINNED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="44"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 THINNED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="45"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 THINNED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="46"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 THINNED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="29"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="19"
+#!   TARGET_NODE="33"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="35"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="23"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="25"
+#!   TARGET_NODE="39"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.050980392156862744,0.050980392156862744,0.047058823529411764,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 312
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_LAS_2,LAS_IN_USE_SEARCH_ENVELOPE_LAS_2,LAS_IN_SEARCH_ENVELOPE_MINX_LAS_2,LAS_IN_SEARCH_ENVELOPE_MINY_LAS_2,LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_2,LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_2,LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_2,LAS_IN_CLIP_TO_ENVELOPE_LAS_2,LAS_IN_NETWORK_AUTHENTICATION_LAS_2,SourceDataset_LAS_3,LAS_IN_USE_SEARCH_ENVELOPE_LAS_3,LAS_IN_SEARCH_ENVELOPE_MINX_LAS_3,LAS_IN_SEARCH_ENVELOPE_MINY_LAS_3,LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_3,LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_3,LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_3,LAS_IN_CLIP_TO_ENVELOPE_LAS_3,LAS_IN_NETWORK_AUTHENTICATION_LAS_3,SourceDataset_LAS_4,LAS_IN_USE_SEARCH_ENVELOPE_LAS_4,LAS_IN_SEARCH_ENVELOPE_MINX_LAS_4,LAS_IN_SEARCH_ENVELOPE_MINY_LAS_4,LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_4,LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_4,LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_4,LAS_IN_CLIP_TO_ENVELOPE_LAS_4,LAS_IN_NETWORK_AUTHENTICATION_LAS_4,SourceDataset_LAS_5,LAS_IN_USE_SEARCH_ENVELOPE_LAS_5,LAS_IN_SEARCH_ENVELOPE_MINX_LAS_5,LAS_IN_SEARCH_ENVELOPE_MINY_LAS_5,LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_5,LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_5,LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_5,LAS_IN_CLIP_TO_ENVELOPE_LAS_5,LAS_IN_NETWORK_AUTHENTICATION_LAS_5,SourceDataset_LAS_6,LAS_IN_USE_SEARCH_ENVELOPE_LAS_6,LAS_IN_SEARCH_ENVELOPE_MINX_LAS_6,LAS_IN_SEARCH_ENVELOPE_MINY_LAS_6,LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_6,LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_6,LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_6,LAS_IN_CLIP_TO_ENVELOPE_LAS_6,LAS_IN_NETWORK_AUTHENTICATION_LAS_6,SourceDataset_LAS_1,LAS_IN_USE_SEARCH_ENVELOPE_LAS_1,LAS_IN_SEARCH_ENVELOPE_MINX_LAS_1,LAS_IN_SEARCH_ENVELOPE_MINY_LAS_1,LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_1,LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_1,LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_1,LAS_IN_CLIP_TO_ENVELOPE_LAS_1,LAS_IN_NETWORK_AUTHENTICATION_LAS_1
+# ============================================================================
+DEFAULT_MACRO SourceDataset_LAS_9 $(FME_MF_DIR)data\LiDAR\300-5040_2015.laz
+
+DEFAULT_MACRO SourceDataset_LAS_7 $(FME_MF_DIR)data\LiDAR\300-5041_2015.laz
+
+DEFAULT_MACRO SourceDataset_LAS_11 $(FME_MF_DIR)data\LiDAR\301-5039_2015.laz
+
+DEFAULT_MACRO SourceDataset_LAS_8 $(FME_MF_DIR)data\LiDAR\301-5040_2015.laz
+
+DEFAULT_MACRO SourceDataset_LAS_10 $(FME_MF_DIR)data\LiDAR\301-5041_2015.laz
+
+DEFAULT_MACRO SourceDataset_LAS $(FME_MF_DIR)data\LiDAR\300-5039_2015.laz
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_LAS_9$encode)} == {}} { puts_real {Parameter 'SourceDataset_LAS_9' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_LAS_7$encode)} == {}} { puts_real {Parameter 'SourceDataset_LAS_7' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_LAS_11$encode)} == {}} { puts_real {Parameter 'SourceDataset_LAS_11' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_LAS_8$encode)} == {}} { puts_real {Parameter 'SourceDataset_LAS_8' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_LAS_10$encode)} == {}} { puts_real {Parameter 'SourceDataset_LAS_10' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_LAS$encode)} == {}} { puts_real {Parameter 'SourceDataset_LAS' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} LAS
+MULTI_READER_KEYWORD{0} LAS_2
+MULTI_READER_GEN_DIRECTIVES{0} READER_META_ATTRIBUTES,fme_dataset,RESOLUTION,0,SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,GROUP_BY_DATASET,No,SEARCH_ENVELOPE_MINY,0,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,LAS_EXPOSE_FORMAT_ATTRS,
+MULTI_READER_TYPE{1} LAS
+MULTI_READER_KEYWORD{1} LAS_3
+MULTI_READER_GEN_DIRECTIVES{1} READER_META_ATTRIBUTES,fme_dataset,RESOLUTION,0,SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,GROUP_BY_DATASET,No,SEARCH_ENVELOPE_MINY,0,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,LAS_EXPOSE_FORMAT_ATTRS,
+MULTI_READER_TYPE{2} LAS
+MULTI_READER_KEYWORD{2} LAS_4
+MULTI_READER_GEN_DIRECTIVES{2} READER_META_ATTRIBUTES,fme_dataset,RESOLUTION,0,SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,GROUP_BY_DATASET,No,SEARCH_ENVELOPE_MINY,0,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,LAS_EXPOSE_FORMAT_ATTRS,
+MULTI_READER_TYPE{3} LAS
+MULTI_READER_KEYWORD{3} LAS_5
+MULTI_READER_GEN_DIRECTIVES{3} READER_META_ATTRIBUTES,fme_dataset,RESOLUTION,0,SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,GROUP_BY_DATASET,No,SEARCH_ENVELOPE_MINY,0,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,LAS_EXPOSE_FORMAT_ATTRS,
+MULTI_READER_TYPE{4} LAS
+MULTI_READER_KEYWORD{4} LAS_6
+MULTI_READER_GEN_DIRECTIVES{4} READER_META_ATTRIBUTES,fme_dataset,RESOLUTION,0,SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,GROUP_BY_DATASET,No,SEARCH_ENVELOPE_MINY,0,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,LAS_EXPOSE_FORMAT_ATTRS,
+MULTI_READER_TYPE{5} LAS
+MULTI_READER_KEYWORD{5} LAS_1
+MULTI_READER_GEN_DIRECTIVES{5} READER_META_ATTRIBUTES,fme_dataset,RESOLUTION,0,SEARCH_ENVELOPE_MAXX,0,CLIP_TO_ENVELOPE,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,GROUP_BY_DATASET,No,SEARCH_ENVELOPE_MINY,0,_MERGE_SCHEMAS,YES,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,LAS_EXPOSE_FORMAT_ATTRS,
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD MULTI_DEST
+MULTI_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "LAS_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_2
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source LAS file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_LAS_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_2
+DEFAULT_MACRO SourceDataset_LAS_2 $(SourceDataset_LAS_9)
+GUI MULTIFILE SourceDataset_LAS_2 LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|All_files(*)|* Source ASPRS LAS File(s):
+DEFAULT_MACRO LAS_IN_READER_META_ATTRIBUTES_LAS_2 fme_dataset
+LAS_2_READER_META_ATTRIBUTES "$(LAS_IN_READER_META_ATTRIBUTES_LAS_2)"
+DEFAULT_MACRO LAS_IN_GROUP_BY_DATASET_LAS_2 No
+LAS_2_GROUP_BY_DATASET "$(LAS_IN_GROUP_BY_DATASET_LAS_2)"
+DEFAULT_MACRO LAS_IN_RESOLUTION_LAS_2 0
+LAS_2_RESOLUTION "$(LAS_IN_RESOLUTION_LAS_2)"
+# This DEFAULT_MACRO allows metafiles that include this one(egcopc) to override the default and add a RESOLUTION parameter
+DEFAULT_MACRO LAS_IN_EXPOSE_ATTRS_GROUP_LAS_2 
+LAS_2_EXPOSE_ATTRS_GROUP "$(LAS_IN_EXPOSE_ATTRS_GROUP_LAS_2)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO LAS_IN_USE_SEARCH_ENVELOPE_LAS_2 NO
+LAS_2_USE_SEARCH_ENVELOPE "$(LAS_IN_USE_SEARCH_ENVELOPE_LAS_2)"
+GUI ACTIVEDISCLOSUREGROUP LAS_IN_USE_SEARCH_ENVELOPE_LAS_2 LAS_IN_SEARCH_ENVELOPE_MINX_LAS_2%LAS_IN_SEARCH_ENVELOPE_MINY_LAS_2%LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_2%LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_2%LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_2%LAS_IN_CLIP_TO_ENVELOPE_LAS_2%LAS_IN_SEARCH_METHOD%LAS_IN_SEARCH_METHOD_FILTER%LAS_IN_SEARCH_ORDER%LAS_IN_SEARCH_FEATURE%LAS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINX_LAS_2 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINX_LAS_2 0
+LAS_2_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINX_LAS_2)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINX_LAS_2 Minimum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINY_LAS_2 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINY_LAS_2 0
+LAS_2_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINY_LAS_2)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINY_LAS_2 Minimum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_2 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_2 0
+LAS_2_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_2)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_2 Maximum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_2 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_2 0
+LAS_2_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_2)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_2 Maximum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_2 <Unused>, 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_2 
+LAS_2_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_2)"
+GUI OPTIONAL COORDSYS LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_2 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP LAS_IN_CLIP_TO_ENVELOPE_LAS_2 <Unused>,NO 
+DEFAULT_MACRO LAS_IN_CLIP_TO_ENVELOPE_LAS_2 NO
+LAS_2_CLIP_TO_ENVELOPE "$(LAS_IN_CLIP_TO_ENVELOPE_LAS_2)"
+GUI OPTIONAL CHECKBOX LAS_IN_CLIP_TO_ENVELOPE_LAS_2 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO LAS_IN_NETWORK_AUTHENTICATION_LAS_2 
+LAS_2_NETWORK_AUTHENTICATION "$(LAS_IN_NETWORK_AUTHENTICATION_LAS_2)"
+GUI OPTIONAL AUTHENTICATOR LAS_IN_NETWORK_AUTHENTICATION_LAS_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO LAS_IN_ATTRIBUTE_READING_LAS_2 ALL
+LAS_2_ATTRIBUTE_READING "$(LAS_IN_ATTRIBUTE_READING_LAS_2)"
+# ============================================================================
+LAS_2_GENERATE_FME_BUILD_NUM 24783
+LAS_2_DATASET "$(SourceDataset_LAS_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "LAS_3"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_3
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source LAS file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_LAS_3 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_3
+DEFAULT_MACRO SourceDataset_LAS_3 $(SourceDataset_LAS_7)
+GUI MULTIFILE SourceDataset_LAS_3 LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|All_files(*)|* Source ASPRS LAS File(s):
+DEFAULT_MACRO LAS_IN_READER_META_ATTRIBUTES_LAS_3 fme_dataset
+LAS_3_READER_META_ATTRIBUTES "$(LAS_IN_READER_META_ATTRIBUTES_LAS_3)"
+DEFAULT_MACRO LAS_IN_GROUP_BY_DATASET_LAS_3 No
+LAS_3_GROUP_BY_DATASET "$(LAS_IN_GROUP_BY_DATASET_LAS_3)"
+DEFAULT_MACRO LAS_IN_RESOLUTION_LAS_3 0
+LAS_3_RESOLUTION "$(LAS_IN_RESOLUTION_LAS_3)"
+# This DEFAULT_MACRO allows metafiles that include this one(egcopc) to override the default and add a RESOLUTION parameter
+DEFAULT_MACRO LAS_IN_EXPOSE_ATTRS_GROUP_LAS_3 
+LAS_3_EXPOSE_ATTRS_GROUP "$(LAS_IN_EXPOSE_ATTRS_GROUP_LAS_3)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO LAS_IN_USE_SEARCH_ENVELOPE_LAS_3 NO
+LAS_3_USE_SEARCH_ENVELOPE "$(LAS_IN_USE_SEARCH_ENVELOPE_LAS_3)"
+GUI ACTIVEDISCLOSUREGROUP LAS_IN_USE_SEARCH_ENVELOPE_LAS_3 LAS_IN_SEARCH_ENVELOPE_MINX_LAS_3%LAS_IN_SEARCH_ENVELOPE_MINY_LAS_3%LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_3%LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_3%LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_3%LAS_IN_CLIP_TO_ENVELOPE_LAS_3%LAS_IN_SEARCH_METHOD%LAS_IN_SEARCH_METHOD_FILTER%LAS_IN_SEARCH_ORDER%LAS_IN_SEARCH_FEATURE%LAS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINX_LAS_3 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINX_LAS_3 0
+LAS_3_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINX_LAS_3)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINX_LAS_3 Minimum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINY_LAS_3 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINY_LAS_3 0
+LAS_3_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINY_LAS_3)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINY_LAS_3 Minimum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_3 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_3 0
+LAS_3_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_3)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_3 Maximum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_3 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_3 0
+LAS_3_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_3)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_3 Maximum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_3 <Unused>, 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_3 
+LAS_3_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_3)"
+GUI OPTIONAL COORDSYS LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_3 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP LAS_IN_CLIP_TO_ENVELOPE_LAS_3 <Unused>,NO 
+DEFAULT_MACRO LAS_IN_CLIP_TO_ENVELOPE_LAS_3 NO
+LAS_3_CLIP_TO_ENVELOPE "$(LAS_IN_CLIP_TO_ENVELOPE_LAS_3)"
+GUI OPTIONAL CHECKBOX LAS_IN_CLIP_TO_ENVELOPE_LAS_3 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO LAS_IN_NETWORK_AUTHENTICATION_LAS_3 
+LAS_3_NETWORK_AUTHENTICATION "$(LAS_IN_NETWORK_AUTHENTICATION_LAS_3)"
+GUI OPTIONAL AUTHENTICATOR LAS_IN_NETWORK_AUTHENTICATION_LAS_3 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO LAS_IN_ATTRIBUTE_READING_LAS_3 ALL
+LAS_3_ATTRIBUTE_READING "$(LAS_IN_ATTRIBUTE_READING_LAS_3)"
+# ============================================================================
+LAS_3_GENERATE_FME_BUILD_NUM 24783
+LAS_3_DATASET "$(SourceDataset_LAS_3)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "LAS_4"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_4
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source LAS file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_LAS_4 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_4
+DEFAULT_MACRO SourceDataset_LAS_4 $(SourceDataset_LAS_11)
+GUI MULTIFILE SourceDataset_LAS_4 LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|All_files(*)|* Source ASPRS LAS File(s):
+DEFAULT_MACRO LAS_IN_READER_META_ATTRIBUTES_LAS_4 fme_dataset
+LAS_4_READER_META_ATTRIBUTES "$(LAS_IN_READER_META_ATTRIBUTES_LAS_4)"
+DEFAULT_MACRO LAS_IN_GROUP_BY_DATASET_LAS_4 No
+LAS_4_GROUP_BY_DATASET "$(LAS_IN_GROUP_BY_DATASET_LAS_4)"
+DEFAULT_MACRO LAS_IN_RESOLUTION_LAS_4 0
+LAS_4_RESOLUTION "$(LAS_IN_RESOLUTION_LAS_4)"
+# This DEFAULT_MACRO allows metafiles that include this one(egcopc) to override the default and add a RESOLUTION parameter
+DEFAULT_MACRO LAS_IN_EXPOSE_ATTRS_GROUP_LAS_4
+LAS_4_EXPOSE_ATTRS_GROUP "$(LAS_IN_EXPOSE_ATTRS_GROUP_LAS_4)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO LAS_IN_USE_SEARCH_ENVELOPE_LAS_4 NO
+LAS_4_USE_SEARCH_ENVELOPE "$(LAS_IN_USE_SEARCH_ENVELOPE_LAS_4)"
+GUI ACTIVEDISCLOSUREGROUP LAS_IN_USE_SEARCH_ENVELOPE_LAS_4 LAS_IN_SEARCH_ENVELOPE_MINX_LAS_4%LAS_IN_SEARCH_ENVELOPE_MINY_LAS_4%LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_4%LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_4%LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_4%LAS_IN_CLIP_TO_ENVELOPE_LAS_4%LAS_IN_SEARCH_METHOD%LAS_IN_SEARCH_METHOD_FILTER%LAS_IN_SEARCH_ORDER%LAS_IN_SEARCH_FEATURE%LAS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINX_LAS_4 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINX_LAS_4 0
+LAS_4_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINX_LAS_4)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINX_LAS_4 Minimum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINY_LAS_4 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINY_LAS_4 0
+LAS_4_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINY_LAS_4)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINY_LAS_4 Minimum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_4 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_4 0
+LAS_4_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_4)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_4 Maximum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_4 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_4 0
+LAS_4_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_4)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_4 Maximum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_4 <Unused>, 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_4 
+LAS_4_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_4)"
+GUI OPTIONAL COORDSYS LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_4 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP LAS_IN_CLIP_TO_ENVELOPE_LAS_4 <Unused>,NO 
+DEFAULT_MACRO LAS_IN_CLIP_TO_ENVELOPE_LAS_4 NO
+LAS_4_CLIP_TO_ENVELOPE "$(LAS_IN_CLIP_TO_ENVELOPE_LAS_4)"
+GUI OPTIONAL CHECKBOX LAS_IN_CLIP_TO_ENVELOPE_LAS_4 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO LAS_IN_NETWORK_AUTHENTICATION_LAS_4 
+LAS_4_NETWORK_AUTHENTICATION "$(LAS_IN_NETWORK_AUTHENTICATION_LAS_4)"
+GUI OPTIONAL AUTHENTICATOR LAS_IN_NETWORK_AUTHENTICATION_LAS_4 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO LAS_IN_ATTRIBUTE_READING_LAS_4 ALL
+LAS_4_ATTRIBUTE_READING "$(LAS_IN_ATTRIBUTE_READING_LAS_4)"
+# ============================================================================
+LAS_4_GENERATE_FME_BUILD_NUM 24783
+LAS_4_DATASET "$(SourceDataset_LAS_4)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "LAS_5"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_5
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source LAS file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_LAS_5 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_5
+DEFAULT_MACRO SourceDataset_LAS_5 $(SourceDataset_LAS_8)
+GUI MULTIFILE SourceDataset_LAS_5 LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|All_files(*)|* Source ASPRS LAS File(s):
+DEFAULT_MACRO LAS_IN_READER_META_ATTRIBUTES_LAS_5 fme_dataset
+LAS_5_READER_META_ATTRIBUTES "$(LAS_IN_READER_META_ATTRIBUTES_LAS_5)"
+DEFAULT_MACRO LAS_IN_GROUP_BY_DATASET_LAS_5 No
+LAS_5_GROUP_BY_DATASET "$(LAS_IN_GROUP_BY_DATASET_LAS_5)"
+DEFAULT_MACRO LAS_IN_RESOLUTION_LAS_5 0
+LAS_5_RESOLUTION "$(LAS_IN_RESOLUTION_LAS_5)"
+# This DEFAULT_MACRO allows metafiles that include this one(egcopc) to override the default and add a RESOLUTION parameter
+DEFAULT_MACRO LAS_IN_EXPOSE_ATTRS_GROUP_LAS_5
+LAS_5_EXPOSE_ATTRS_GROUP "$(LAS_IN_EXPOSE_ATTRS_GROUP_LAS_5)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO LAS_IN_USE_SEARCH_ENVELOPE_LAS_5 NO
+LAS_5_USE_SEARCH_ENVELOPE "$(LAS_IN_USE_SEARCH_ENVELOPE_LAS_5)"
+GUI ACTIVEDISCLOSUREGROUP LAS_IN_USE_SEARCH_ENVELOPE_LAS_5 LAS_IN_SEARCH_ENVELOPE_MINX_LAS_5%LAS_IN_SEARCH_ENVELOPE_MINY_LAS_5%LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_5%LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_5%LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_5%LAS_IN_CLIP_TO_ENVELOPE_LAS_5%LAS_IN_SEARCH_METHOD%LAS_IN_SEARCH_METHOD_FILTER%LAS_IN_SEARCH_ORDER%LAS_IN_SEARCH_FEATURE%LAS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINX_LAS_5 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINX_LAS_5 0
+LAS_5_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINX_LAS_5)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINX_LAS_5 Minimum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINY_LAS_5 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINY_LAS_5 0
+LAS_5_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINY_LAS_5)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINY_LAS_5 Minimum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_5 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_5 0
+LAS_5_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_5)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_5 Maximum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_5 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_5 0
+LAS_5_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_5)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_5 Maximum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_5 <Unused>, 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_5 
+LAS_5_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_5)"
+GUI OPTIONAL COORDSYS LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_5 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP LAS_IN_CLIP_TO_ENVELOPE_LAS_5 <Unused>,NO 
+DEFAULT_MACRO LAS_IN_CLIP_TO_ENVELOPE_LAS_5 NO
+LAS_5_CLIP_TO_ENVELOPE "$(LAS_IN_CLIP_TO_ENVELOPE_LAS_5)"
+GUI OPTIONAL CHECKBOX LAS_IN_CLIP_TO_ENVELOPE_LAS_5 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO LAS_IN_NETWORK_AUTHENTICATION_LAS_5 
+LAS_5_NETWORK_AUTHENTICATION "$(LAS_IN_NETWORK_AUTHENTICATION_LAS_5)"
+GUI OPTIONAL AUTHENTICATOR LAS_IN_NETWORK_AUTHENTICATION_LAS_5 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO LAS_IN_ATTRIBUTE_READING_LAS_5 ALL
+LAS_5_ATTRIBUTE_READING "$(LAS_IN_ATTRIBUTE_READING_LAS_5)"
+# ============================================================================
+LAS_5_GENERATE_FME_BUILD_NUM 24783
+LAS_5_DATASET "$(SourceDataset_LAS_5)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "LAS_6"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_6
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source LAS file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_LAS_6 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_6
+DEFAULT_MACRO SourceDataset_LAS_6 $(SourceDataset_LAS_10)
+GUI MULTIFILE SourceDataset_LAS_6 LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|All_files(*)|* Source ASPRS LAS File(s):
+DEFAULT_MACRO LAS_IN_READER_META_ATTRIBUTES_LAS_6 fme_dataset
+LAS_6_READER_META_ATTRIBUTES "$(LAS_IN_READER_META_ATTRIBUTES_LAS_6)"
+DEFAULT_MACRO LAS_IN_GROUP_BY_DATASET_LAS_6 No
+LAS_6_GROUP_BY_DATASET "$(LAS_IN_GROUP_BY_DATASET_LAS_6)"
+DEFAULT_MACRO LAS_IN_RESOLUTION_LAS_6 0
+LAS_6_RESOLUTION "$(LAS_IN_RESOLUTION_LAS_6)"
+# This DEFAULT_MACRO allows metafiles that include this one(egcopc) to override the default and add a RESOLUTION parameter
+DEFAULT_MACRO LAS_IN_EXPOSE_ATTRS_GROUP_LAS_6
+LAS_6_EXPOSE_ATTRS_GROUP "$(LAS_IN_EXPOSE_ATTRS_GROUP_LAS_6)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO LAS_IN_USE_SEARCH_ENVELOPE_LAS_6 NO
+LAS_6_USE_SEARCH_ENVELOPE "$(LAS_IN_USE_SEARCH_ENVELOPE_LAS_6)"
+GUI ACTIVEDISCLOSUREGROUP LAS_IN_USE_SEARCH_ENVELOPE_LAS_6 LAS_IN_SEARCH_ENVELOPE_MINX_LAS_6%LAS_IN_SEARCH_ENVELOPE_MINY_LAS_6%LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_6%LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_6%LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_6%LAS_IN_CLIP_TO_ENVELOPE_LAS_6%LAS_IN_SEARCH_METHOD%LAS_IN_SEARCH_METHOD_FILTER%LAS_IN_SEARCH_ORDER%LAS_IN_SEARCH_FEATURE%LAS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINX_LAS_6 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINX_LAS_6 0
+LAS_6_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINX_LAS_6)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINX_LAS_6 Minimum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINY_LAS_6 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINY_LAS_6 0
+LAS_6_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINY_LAS_6)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINY_LAS_6 Minimum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_6 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_6 0
+LAS_6_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_6)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_6 Maximum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_6 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_6 0
+LAS_6_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_6)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_6 Maximum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_6 <Unused>, 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_6 
+LAS_6_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_6)"
+GUI OPTIONAL COORDSYS LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_6 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP LAS_IN_CLIP_TO_ENVELOPE_LAS_6 <Unused>,NO 
+DEFAULT_MACRO LAS_IN_CLIP_TO_ENVELOPE_LAS_6 NO
+LAS_6_CLIP_TO_ENVELOPE "$(LAS_IN_CLIP_TO_ENVELOPE_LAS_6)"
+GUI OPTIONAL CHECKBOX LAS_IN_CLIP_TO_ENVELOPE_LAS_6 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO LAS_IN_NETWORK_AUTHENTICATION_LAS_6 
+LAS_6_NETWORK_AUTHENTICATION "$(LAS_IN_NETWORK_AUTHENTICATION_LAS_6)"
+GUI OPTIONAL AUTHENTICATOR LAS_IN_NETWORK_AUTHENTICATION_LAS_6 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO LAS_IN_ATTRIBUTE_READING_LAS_6 ALL
+LAS_6_ATTRIBUTE_READING "$(LAS_IN_ATTRIBUTE_READING_LAS_6)"
+# ============================================================================
+LAS_6_GENERATE_FME_BUILD_NUM 24783
+LAS_6_DATASET "$(SourceDataset_LAS_6)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "LAS_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_1
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source LAS file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_LAS_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER LAS LAS_1
+DEFAULT_MACRO SourceDataset_LAS_1 $(SourceDataset_LAS)
+GUI MULTIFILE SourceDataset_LAS_1 LAS_Files(*.las;*.laz;*.zlas;*.lasd)|*.las;*.laz;*.zlas;*.lasd|LAS_Files(*.las)|*.las|Compressed_LAS_Files(*.laz)|*.laz|Esri_Optimized_LAS_Files(*.zlas)|*.zlas|Esri_LAS_Dataset_Files(*.lasd)|*.lasd|All_files(*)|* Source ASPRS LAS File(s):
+DEFAULT_MACRO LAS_IN_READER_META_ATTRIBUTES_LAS_1 fme_dataset
+LAS_1_READER_META_ATTRIBUTES "$(LAS_IN_READER_META_ATTRIBUTES_LAS_1)"
+DEFAULT_MACRO LAS_IN_GROUP_BY_DATASET_LAS_1 No
+LAS_1_GROUP_BY_DATASET "$(LAS_IN_GROUP_BY_DATASET_LAS_1)"
+DEFAULT_MACRO LAS_IN_RESOLUTION_LAS_1 0
+LAS_1_RESOLUTION "$(LAS_IN_RESOLUTION_LAS_1)"
+# This DEFAULT_MACRO allows metafiles that include this one(egcopc) to override the default and add a RESOLUTION parameter
+DEFAULT_MACRO LAS_IN_EXPOSE_ATTRS_GROUP_LAS_1
+LAS_1_EXPOSE_ATTRS_GROUP "$(LAS_IN_EXPOSE_ATTRS_GROUP_LAS_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO LAS_IN_USE_SEARCH_ENVELOPE_LAS_1 NO
+LAS_1_USE_SEARCH_ENVELOPE "$(LAS_IN_USE_SEARCH_ENVELOPE_LAS_1)"
+GUI ACTIVEDISCLOSUREGROUP LAS_IN_USE_SEARCH_ENVELOPE_LAS_1 LAS_IN_SEARCH_ENVELOPE_MINX_LAS_1%LAS_IN_SEARCH_ENVELOPE_MINY_LAS_1%LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_1%LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_1%LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_1%LAS_IN_CLIP_TO_ENVELOPE_LAS_1%LAS_IN_SEARCH_METHOD%LAS_IN_SEARCH_METHOD_FILTER%LAS_IN_SEARCH_ORDER%LAS_IN_SEARCH_FEATURE%LAS_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINX_LAS_1 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINX_LAS_1 0
+LAS_1_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINX_LAS_1)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINX_LAS_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MINY_LAS_1 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MINY_LAS_1 0
+LAS_1_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MINY_LAS_1)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MINY_LAS_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_1 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_1 0
+LAS_1_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_1)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXX_LAS_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_1 <Unused>,0 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_1 0
+LAS_1_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_1)"
+GUI OPTIONAL FLOAT LAS_IN_SEARCH_ENVELOPE_MAXY_LAS_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_1 <Unused>, 
+DEFAULT_MACRO LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_1 
+LAS_1_SEARCH_ENVELOPE "$(LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_1)"
+GUI OPTIONAL COORDSYS LAS_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_LAS_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP LAS_IN_CLIP_TO_ENVELOPE_LAS_1 <Unused>,NO 
+DEFAULT_MACRO LAS_IN_CLIP_TO_ENVELOPE_LAS_1 NO
+LAS_1_CLIP_TO_ENVELOPE "$(LAS_IN_CLIP_TO_ENVELOPE_LAS_1)"
+GUI OPTIONAL CHECKBOX LAS_IN_CLIP_TO_ENVELOPE_LAS_1 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO LAS_IN_NETWORK_AUTHENTICATION_LAS_1 
+LAS_1_NETWORK_AUTHENTICATION "$(LAS_IN_NETWORK_AUTHENTICATION_LAS_1)"
+GUI OPTIONAL AUTHENTICATOR LAS_IN_NETWORK_AUTHENTICATION_LAS_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO LAS_IN_ATTRIBUTE_READING_LAS_1 ALL
+LAS_1_ATTRIBUTE_READING "$(LAS_IN_ATTRIBUTE_READING_LAS_1)"
+# ============================================================================
+LAS_1_GENERATE_FME_BUILD_NUM 24783
+LAS_1_DATASET "$(SourceDataset_LAS_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)$(WORKSPACE_NAME).log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_LAS_2 LAS_2
+DEFAULT_MACRO DATASET_KEYWORD_LAS_3 LAS_3
+DEFAULT_MACRO DATASET_KEYWORD_LAS_4 LAS_4
+DEFAULT_MACRO DATASET_KEYWORD_LAS_5 LAS_5
+DEFAULT_MACRO DATASET_KEYWORD_LAS_6 LAS_6
+DEFAULT_MACRO DATASET_KEYWORD_LAS_1 LAS_1
+# -------------------------------------------------------------------------
+
+LAS_2_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+LAS_3_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+LAS_4_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+LAS_5_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+LAS_6_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+LAS_1_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+LAS_2_DEF LAS
+# -------------------------------------------------------------------------
+LAS_3_DEF LAS
+# -------------------------------------------------------------------------
+LAS_4_DEF LAS
+# -------------------------------------------------------------------------
+LAS_5_DEF LAS
+# -------------------------------------------------------------------------
+LAS_6_DEF LAS
+# -------------------------------------------------------------------------
+LAS_1_DEF LAS
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE LAS LAS_2::LAS multi_reader_keyword,$(DATASET_KEYWORD_LAS_2) TO FME_GENERIC ::LAS ALIAS_GEOMETRY    ROUTE LAS LAS_3::LAS multi_reader_keyword,$(DATASET_KEYWORD_LAS_3) TO FME_GENERIC ::LAS ALIAS_GEOMETRY    ROUTE LAS LAS_4::LAS multi_reader_keyword,$(DATASET_KEYWORD_LAS_4) TO FME_GENERIC ::LAS ALIAS_GEOMETRY    ROUTE LAS LAS_5::LAS multi_reader_keyword,$(DATASET_KEYWORD_LAS_5) TO FME_GENERIC ::LAS ALIAS_GEOMETRY    ROUTE LAS LAS_6::LAS multi_reader_keyword,$(DATASET_KEYWORD_LAS_6) TO FME_GENERIC ::LAS ALIAS_GEOMETRY    ROUTE LAS LAS_1::LAS multi_reader_keyword,$(DATASET_KEYWORD_LAS_1) TO FME_GENERIC ::LAS ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+LAS_2_MERGE_DEF LAS_2::LAS EXACT LAS
+LAS_3_MERGE_DEF LAS_3::LAS EXACT LAS
+LAS_4_MERGE_DEF LAS_4::LAS EXACT LAS
+LAS_5_MERGE_DEF LAS_5::LAS EXACT LAS
+LAS_6_MERGE_DEF LAS_6::LAS EXACT LAS
+LAS_1_MERGE_DEF LAS_1::LAS EXACT LAS
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "LAS_LAS_2 Splitter"    INPUT FEATURE_TYPE LAS      multi_reader_keyword $(DATASET_KEYWORD_LAS_2)    OUTPUT FEATURE_TYPE LAS_LAS_2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "LAS_LAS_3 Splitter"    INPUT FEATURE_TYPE LAS      multi_reader_keyword $(DATASET_KEYWORD_LAS_3)    OUTPUT FEATURE_TYPE LAS_LAS_3
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "LAS_LAS_6 Splitter"    INPUT FEATURE_TYPE LAS      multi_reader_keyword $(DATASET_KEYWORD_LAS_6)    OUTPUT FEATURE_TYPE LAS_LAS_6
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "LAS_LAS_4 Splitter"    INPUT FEATURE_TYPE LAS      multi_reader_keyword $(DATASET_KEYWORD_LAS_4)    OUTPUT FEATURE_TYPE LAS_LAS_4
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "LAS_LAS_5 Splitter"    INPUT FEATURE_TYPE LAS      multi_reader_keyword $(DATASET_KEYWORD_LAS_5)    OUTPUT FEATURE_TYPE LAS_LAS_5
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "LAS_LAS_1 Splitter"    INPUT FEATURE_TYPE LAS      multi_reader_keyword $(DATASET_KEYWORD_LAS_1)    OUTPUT FEATURE_TYPE LAS_LAS_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+INCLUDE [ if {[string equal {KEEPNPOINT} {KEEPNPOINT}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"30"}; } elseif {[string equal {KEEPNPOINT} {MAXNUMPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {FIRSTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {LASTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; }; ]
+FACTORY_DEF {*} ExecuteFunctionFactory    FACTORY_NAME { PointCloudThinner }    INPUT  FEATURE_TYPE LAS_LAS_1    FUNCTION_DEFINITION { @ThinPointCloud(REJECTABLE, $(THIN_ARGS)) }    OUTPUT { COMPLETE FEATURE_TYPE PointCloudThinner_THINNED        }    OUTPUT { REJECTED FEATURE_TYPE PointCloudThinner_<REJECTED>        }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {PointCloudThinner__Rejected__42748898_fe48_4234_a8d8_ac1aecc2d9d61} ]
+# If the Logger was in a custom transformer, the custom transformer's name was not being
+# properly logged -- instead we saw "$(<customXformerName_WORKSPACE_NAME)" being logged as the prefix of the
+# message. By deferencing and expanding out the XFORMER_NAME below, and then "WWJD" encoding it when it is
+# used in the @Log call via the $encode macro name suffix trick, we get the right result, and the right result
+# safely.
+MACRO LOGGABLE_XFORMER_NAME PointCloudThinner__Rejected_
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { PointCloudThinner__Rejected__Logger }    INPUT  FEATURE_TYPE PointCloudThinner_<REJECTED>    OUTPUT { FEATURE_TYPE PointCloudThinner__Rejected__LOGGED                  @Log(ENCODED, "$(LOGGABLE_XFORMER_NAME$encode):<space>Feature is:","20","20","",INFO,LOG_ONLY,$(FME_UUID_SAFE))                   }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PointCloudThinner__Rejected_ LOGGED Transformer Output Nuker"   INPUT FEATURE_TYPE PointCloudThinner__Rejected__LOGGED
+# -------------------------------------------------------------------------
+INCLUDE [ if {[string equal {KEEPNPOINT} {KEEPNPOINT}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"30"}; } elseif {[string equal {KEEPNPOINT} {MAXNUMPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {FIRSTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {LASTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; }; ]
+FACTORY_DEF {*} ExecuteFunctionFactory    FACTORY_NAME { PointCloudThinner_6 }    INPUT  FEATURE_TYPE LAS_LAS_6    FUNCTION_DEFINITION { @ThinPointCloud(REJECTABLE, $(THIN_ARGS)) }    OUTPUT { COMPLETE FEATURE_TYPE PointCloudThinner_6_THINNED        }    OUTPUT { REJECTED FEATURE_TYPE PointCloudThinner_6_<REJECTED>        }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {PointCloudThinner_6__Rejected__924b256d_34fb_4173_878d_155ea54609601} ]
+# If the Logger was in a custom transformer, the custom transformer's name was not being
+# properly logged -- instead we saw "$(<customXformerName_WORKSPACE_NAME)" being logged as the prefix of the
+# message. By deferencing and expanding out the XFORMER_NAME below, and then "WWJD" encoding it when it is
+# used in the @Log call via the $encode macro name suffix trick, we get the right result, and the right result
+# safely.
+MACRO LOGGABLE_XFORMER_NAME PointCloudThinner_6__Rejected_
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { PointCloudThinner_6__Rejected__Logger }    INPUT  FEATURE_TYPE PointCloudThinner_6_<REJECTED>    OUTPUT { FEATURE_TYPE PointCloudThinner_6__Rejected__LOGGED                  @Log(ENCODED, "$(LOGGABLE_XFORMER_NAME$encode):<space>Feature is:","20","20","",INFO,LOG_ONLY,$(FME_UUID_SAFE))                   }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PointCloudThinner_6__Rejected_ LOGGED Transformer Output Nuker"   INPUT FEATURE_TYPE PointCloudThinner_6__Rejected__LOGGED
+# -------------------------------------------------------------------------
+INCLUDE [ if {[string equal {KEEPNPOINT} {KEEPNPOINT}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"30"}; } elseif {[string equal {KEEPNPOINT} {MAXNUMPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {FIRSTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {LASTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; }; ]
+FACTORY_DEF {*} ExecuteFunctionFactory    FACTORY_NAME { PointCloudThinner_5 }    INPUT  FEATURE_TYPE LAS_LAS_5    FUNCTION_DEFINITION { @ThinPointCloud(REJECTABLE, $(THIN_ARGS)) }    OUTPUT { COMPLETE FEATURE_TYPE PointCloudThinner_5_THINNED        }    OUTPUT { REJECTED FEATURE_TYPE PointCloudThinner_5_<REJECTED>        }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {PointCloudThinner_5__Rejected__86d84a45_ea79_4079_9dc1_5fcb0fd7a7061} ]
+# If the Logger was in a custom transformer, the custom transformer's name was not being
+# properly logged -- instead we saw "$(<customXformerName_WORKSPACE_NAME)" being logged as the prefix of the
+# message. By deferencing and expanding out the XFORMER_NAME below, and then "WWJD" encoding it when it is
+# used in the @Log call via the $encode macro name suffix trick, we get the right result, and the right result
+# safely.
+MACRO LOGGABLE_XFORMER_NAME PointCloudThinner_5__Rejected_
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { PointCloudThinner_5__Rejected__Logger }    INPUT  FEATURE_TYPE PointCloudThinner_5_<REJECTED>    OUTPUT { FEATURE_TYPE PointCloudThinner_5__Rejected__LOGGED                  @Log(ENCODED, "$(LOGGABLE_XFORMER_NAME$encode):<space>Feature is:","20","20","",INFO,LOG_ONLY,$(FME_UUID_SAFE))                   }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PointCloudThinner_5__Rejected_ LOGGED Transformer Output Nuker"   INPUT FEATURE_TYPE PointCloudThinner_5__Rejected__LOGGED
+# -------------------------------------------------------------------------
+INCLUDE [ if {[string equal {KEEPNPOINT} {KEEPNPOINT}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"30"}; } elseif {[string equal {KEEPNPOINT} {MAXNUMPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {FIRSTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {LASTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; }; ]
+FACTORY_DEF {*} ExecuteFunctionFactory    FACTORY_NAME { PointCloudThinner_4 }    INPUT  FEATURE_TYPE LAS_LAS_4    FUNCTION_DEFINITION { @ThinPointCloud(REJECTABLE, $(THIN_ARGS)) }    OUTPUT { COMPLETE FEATURE_TYPE PointCloudThinner_4_THINNED        }    OUTPUT { REJECTED FEATURE_TYPE PointCloudThinner_4_<REJECTED>        }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {PointCloudThinner_4__Rejected__2d43188f_b78e_45d5_8b7b_ac4f82e29b0f1} ]
+# If the Logger was in a custom transformer, the custom transformer's name was not being
+# properly logged -- instead we saw "$(<customXformerName_WORKSPACE_NAME)" being logged as the prefix of the
+# message. By deferencing and expanding out the XFORMER_NAME below, and then "WWJD" encoding it when it is
+# used in the @Log call via the $encode macro name suffix trick, we get the right result, and the right result
+# safely.
+MACRO LOGGABLE_XFORMER_NAME PointCloudThinner_4__Rejected_
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { PointCloudThinner_4__Rejected__Logger }    INPUT  FEATURE_TYPE PointCloudThinner_4_<REJECTED>    OUTPUT { FEATURE_TYPE PointCloudThinner_4__Rejected__LOGGED                  @Log(ENCODED, "$(LOGGABLE_XFORMER_NAME$encode):<space>Feature is:","20","20","",INFO,LOG_ONLY,$(FME_UUID_SAFE))                   }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PointCloudThinner_4__Rejected_ LOGGED Transformer Output Nuker"   INPUT FEATURE_TYPE PointCloudThinner_4__Rejected__LOGGED
+# -------------------------------------------------------------------------
+INCLUDE [ if {[string equal {KEEPNPOINT} {KEEPNPOINT}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"30"}; } elseif {[string equal {KEEPNPOINT} {MAXNUMPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {FIRSTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {LASTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; }; ]
+FACTORY_DEF {*} ExecuteFunctionFactory    FACTORY_NAME { PointCloudThinner_3 }    INPUT  FEATURE_TYPE LAS_LAS_3    FUNCTION_DEFINITION { @ThinPointCloud(REJECTABLE, $(THIN_ARGS)) }    OUTPUT { COMPLETE FEATURE_TYPE PointCloudThinner_3_THINNED        }    OUTPUT { REJECTED FEATURE_TYPE PointCloudThinner_3_<REJECTED>        }
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {PointCloudThinner_3__Rejected__d8083a0d_735e_41cc_87fb_a550eaf46f101} ]
+# If the Logger was in a custom transformer, the custom transformer's name was not being
+# properly logged -- instead we saw "$(<customXformerName_WORKSPACE_NAME)" being logged as the prefix of the
+# message. By deferencing and expanding out the XFORMER_NAME below, and then "WWJD" encoding it when it is
+# used in the @Log call via the $encode macro name suffix trick, we get the right result, and the right result
+# safely.
+MACRO LOGGABLE_XFORMER_NAME PointCloudThinner_3__Rejected_
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { PointCloudThinner_3__Rejected__Logger }    INPUT  FEATURE_TYPE PointCloudThinner_3_<REJECTED>    OUTPUT { FEATURE_TYPE PointCloudThinner_3__Rejected__LOGGED                  @Log(ENCODED, "$(LOGGABLE_XFORMER_NAME$encode):<space>Feature is:","20","20","",INFO,LOG_ONLY,$(FME_UUID_SAFE))                   }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PointCloudThinner_3__Rejected_ LOGGED Transformer Output Nuker"   INPUT FEATURE_TYPE PointCloudThinner_3__Rejected__LOGGED
+# -------------------------------------------------------------------------
+INCLUDE [ if {[string equal {KEEPNPOINT} {KEEPNPOINT}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"30"}; } elseif {[string equal {KEEPNPOINT} {MAXNUMPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {FIRSTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; } elseif {[string equal {KEEPNPOINT} {LASTNPOINTS}]} {    puts {MACRO THIN_ARGS KEEPNPOINT,"<Unused>"}; }; ]
+FACTORY_DEF {*} ExecuteFunctionFactory    FACTORY_NAME { PointCloudThinner_2 }    INPUT  FEATURE_TYPE LAS_LAS_2    FUNCTION_DEFINITION { @ThinPointCloud(REJECTABLE, $(THIN_ARGS)) }    OUTPUT { COMPLETE FEATURE_TYPE PointCloudThinner_2_THINNED        }    OUTPUT { REJECTED FEATURE_TYPE PointCloudThinner_2_<REJECTED>        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} VectorToPointCloudFactory    FACTORY_NAME { PointCloudCombiner___VectorMerger }    INPUT  FEATURE_TYPE PointCloudThinner_THINNED    INPUT  FEATURE_TYPE PointCloudThinner_2_THINNED    INPUT  FEATURE_TYPE PointCloudThinner_3_THINNED    INPUT  FEATURE_TYPE PointCloudThinner_4_THINNED    INPUT  FEATURE_TYPE PointCloudThinner_5_THINNED    INPUT  FEATURE_TYPE PointCloudThinner_6_THINNED    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    ACCUMULATE_ATTRIBUTES { yes }    EXTRACT_RASTER_NODATA { no }    SPACING { "1.0" }    MEASURES_TO_PRESERVE {  }    ATTRIBUTES_TO_PRESERVE {  }    REJECT_INVALID_FEATURES yes    OUTPUT { COERCED FEATURE_TYPE PointCloudCombiner___MergedVectorFeatures__       @SupplyAttributes(?,fme_basename,PointCloudCombiner) }    OUTPUT { <REJECTED> FEATURE_TYPE PointCloudCombiner_<REJECTED>        }
+FACTORY_DEF {*} PointCloudCombinerFactory    FACTORY_NAME { PointCloudCombiner___Combiner }    INPUT { FEATURE_TYPE PointCloudCombiner___MergedVectorFeatures__ }    FLUSH_WHEN_GROUPS_CHANGE { <Unused>  }    ACCUMULATE_ATTRIBUTES { yes }    REJECT_INVALID_FEATURES yes    OUTPUT { <REJECTED> FEATURE_TYPE PointCloudCombiner_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME PointCloudCombiner_<Rejected> INPUT FEATURE_TYPE PointCloudCombiner_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, PointCloudCombiner<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+# Create a FME_UUID_SAFE from the FME_UUID so we can use it for Tcl identifiers (FMEDESKTOP-11308)
+INCLUDE [ FME_CleanseFMEUUID {PointCloudThinner_2__Rejected__fb065b62_e8f3_49c2_8228_4e4663cd03051} ]
+# If the Logger was in a custom transformer, the custom transformer's name was not being
+# properly logged -- instead we saw "$(<customXformerName_WORKSPACE_NAME)" being logged as the prefix of the
+# message. By deferencing and expanding out the XFORMER_NAME below, and then "WWJD" encoding it when it is
+# used in the @Log call via the $encode macro name suffix trick, we get the right result, and the right result
+# safely.
+MACRO LOGGABLE_XFORMER_NAME PointCloudThinner_2__Rejected_
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { PointCloudThinner_2__Rejected__Logger }    INPUT  FEATURE_TYPE PointCloudThinner_2_<REJECTED>    OUTPUT { FEATURE_TYPE PointCloudThinner_2__Rejected__LOGGED                  @Log(ENCODED, "$(LOGGABLE_XFORMER_NAME$encode):<space>Feature is:","20","20","",INFO,LOG_ONLY,$(FME_UUID_SAFE))                   }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "PointCloudThinner_2__Rejected_ LOGGED Transformer Output Nuker"   INPUT FEATURE_TYPE PointCloudThinner_2__Rejected__LOGGED
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+

@@ -1,0 +1,84 @@
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Current FME version: FME 2024.2.0.0 (20241102 - Build 24783 - WIN64)
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|System Time: 20250212014405 UTC
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Form (floating)
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Temporary License: 140 days left.
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Machine host name is: C46390
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|OS Locale Name     : fr_CA
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|OS Locale Encoding : windows-1252
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Process Encoding   : UTF-8
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME API version: '4.0 20240212'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'D:\Loup\7630h25\semaine5/'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'lab5.fmw'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2024.2.0.0'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Operating System: Microsoft Windows 11 64-bit  (Build 26100)
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Platform: WIN64
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|System Status: 667.18 GB of disk space available in the FME temporary folder (C:\Users\kg291979\AppData\Local\Temp\wbrun_1739323622187_15980\fmetmp_12)
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|System Status: 31.80 GB of physical memory available
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|System Status: 127.20 GB of virtual memory available
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|START - ProcessID: 6492, peak process memory usage: 44328 kB, current process memory usage: 43520 kB
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `D:\Loup\7630h25\semaine5\wb-xlate-1739324643343_15980' `--FME_LAUNCH_VIEWER_APP' `WORKBENCH' `LOG_STANDARDOUT' `YES' `LOG_TIMINGS' `YES' `LOG_FILENAME' `$(WORKSPACE_NAME).log' `LogCountServerName' `55344' `LOG_STANDARDOUT' `No' `WORKBENCH_LOG_SERVER' `55236'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\kg291979\AppData\Roaming\Safe Software\FME\'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;C:\Users\kg291979\Documents\FME\Formats
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Shared folders for transformers are : C:\Users\kg291979\AppData\Roaming\Safe Software\FME\Packages\24783-win64\transformers;C:\Program Files\FME\transformers
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\kg291979\Documents\FME\CoordinateSystems
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\kg291979\Documents\FME\CoordinateSystemExceptions
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\kg291979\Documents\FME\CoordinateSystemGridOverrides
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\kg291979\Documents\FME\CsmapTransformationExceptions
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\kg291979\Documents\FME\TransformerCategories
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: Current working folder is `D:\Loup\7630h25\semaine5'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\kg291979\AppData\Local\Temp\wbrun_1739323622187_15980\fmetmp_12', set from environment variable `FME_TEMP'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: Cache folder is 'C:\Users\kg291979\AppData\Local\Temp'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: Start freeing memory when the process exceeds 95.40 GB
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|FME Configuration: Stop freeing memory when the process is below 71.55 GB
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Creating writer for format: 
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Creating reader for format: 
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding LAS Reader with keyword LAS_1
+2025-02-11 20:44:04|   0.0|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2025-02-11 20:44:04|   0.1|  0.1|INFORM|Creating reader for format: ASPRS Lidar Data Exchange Format (LAS)
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `LAS'
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|Loaded module 'LAS' from file 'C:\Program Files\FME\plugins/LIDAR_FME.dll'
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|FME API version of module 'LIDAR_FME' matches current internal version (4.0 20240212)
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|Using MultiWriter with keyword `MULTI_DEST' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (4.0 20240212)
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|Loaded module 'ThinPointCloud_func' from file 'C:\Program Files\FME\plugins/ThinPointCloud_func.dll'
+2025-02-11 20:44:04|   0.1|  0.0|INFORM|FME API version of module 'ThinPointCloud_func' matches current internal version (4.0 20240212)
+2025-02-11 20:44:04|   0.3|  0.2|INFORM|Predefined coordinate system `CSRS.MTM-8' (NAD83(CSRS) / MTM zone 8) matches dataset coordinate system 
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|The OGC definition of the FME coordinate system 'CSRS.MTM-8' is 'PROJCS["GCS_NAD83_CSRS_QUEBEC",GEOGCS["NAD83(CSRS)",DATUM["NAD83_Canadian_Spatial_Reference_System",SPHEROID["GRS 1980",6378137,298.257222101004,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6140"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4617"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",-73.5],PARAMETER["scale_factor",0.9999],PARAMETER["false_easting",304800],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH]]'
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|FME Configuration: Source coordinate system for reader LAS_1[LAS] set to `CSRS.MTM-8' as read from input data
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|Coordinate System `CSRS.MTM-8' parameters: CS_NAME=`CSRS.MTM-8' DESC_NM=`NAD83(CSRS) / MTM zone 8' DT_NAME=`CSRS' EPSG_QD=`1' GROUP=`CANADA' MAP_SCL=`1' MAX_LAT=`63.4' MAX_LNG=`-71.78333333333333' MIN_LAT=`44.083333333333336' MIN_LNG=`-75.2' PARM1=`-73.5' PROJ=`TM' QUAD=`1' SCL_RED=`0.9999' SOURCE=`EPSG, V6.11.2, 2950 [Topographic Mapping Section; Quebec Min]' UNIT=`Meter' X_OFF=`304800' ZERO_X=`0.001' ZERO_Y=`0.001'
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|PointCloudThinner: Thinning point cloud from 14539405 point(s) to 484646 point(s)
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 1 features from 1 readers
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|Emptying factory pipeline
+2025-02-11 20:44:04|   0.3|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 1 input feature(s), wrote 1 output feature(s): 1 matched merge filters, 1 were routed to output, 0 could not be routed.
+2025-02-11 20:44:04|   0.3|  0.0|STATS |Unwanted Router Input Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |LAS_LAS_2 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |LAS_LAS_3 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |LAS_LAS_6 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |LAS_LAS_4 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |LAS_LAS_5 Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |LAS_LAS_1 Splitter (TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |PointCloudThinner (ExecuteFunctionFactory): Executed FME Functions on 1 input feature(s) -- 1 feature(s) completed and 0 feature(s) rejected
+2025-02-11 20:44:04|   0.3|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2025-02-11 20:44:04|   0.3|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2025-02-11 20:44:04|   0.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-02-11 20:44:04|   0.3|  0.0|STATS |                            Features Read Summary
+2025-02-11 20:44:04|   0.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-02-11 20:44:04|   0.3|  0.0|STATS |LAS                                                                          1
+2025-02-11 20:44:04|   0.3|  0.0|STATS |==============================================================================
+2025-02-11 20:44:04|   0.3|  0.0|STATS |Total Features Read                                                          1
+2025-02-11 20:44:04|   0.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-02-11 20:44:04|   0.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-02-11 20:44:04|   0.3|  0.0|STATS |                           Features Written Summary
+2025-02-11 20:44:04|   0.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-02-11 20:44:04|   0.3|  0.0|STATS |==============================================================================
+2025-02-11 20:44:04|   0.3|  0.0|STATS |Total Features Written                                                       0
+2025-02-11 20:44:04|   0.3|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (0 feature(s) output)
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|FME Session Duration: 0.4 seconds. (CPU: 0.2s user, 0.1s system)
+2025-02-11 20:44:04|   0.3|  0.0|INFORM|END - ProcessID: 6492, peak process memory usage: 69180 kB, current process memory usage: 69180 kB

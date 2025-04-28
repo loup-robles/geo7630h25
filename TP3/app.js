@@ -95,7 +95,7 @@ map.on("load", () => {
     map.addSource(id, {
       type: "vector",
       tiles: [
-        `https://super-duper-capybara-695594xw694j2grw-8801.app.github.dev/${src}/{z}/{x}/{y}.pbf`
+        `https://improved-broccoli-q76ggvq6w44q39r6r-8801.app.github.dev/${src}/{z}/{x}/{y}.pbf`
       ]
     });
 
@@ -327,4 +327,3 @@ map.on("load", () => {
   updateStats(currentLayer);
   showExplanation("donneesSelect");
 });
-

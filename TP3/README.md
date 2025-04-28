@@ -30,7 +30,10 @@ Au Québec, on dénombre **trois cases de stationnement par voiture**. Il y a **
 
 Voici à quoi ressemble notre application finale
 
-![alt text](app.png)
+![alt text](image.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+
 
 ## Fonctionnalités incluses
 
@@ -129,3 +132,9 @@ Notre code est construit en 6 fichiers différents :
 - **Au clic sur un point**, un popup affiche ses infos.
 
 Pour cette remise, aucun traitement supplémentaire n'a été effectué. Nous avons utilisé les données produites lors de la remise du TP2.
+
+## Améliorations possibles
+
+- Il faudrait pouvoir choisir quel degrès de non-pertinence des stationnement on souhaite afficher pour que la heatmap ait du sens (pour cette indicateur).
+- L'esthétique de la carte peut etre améliorer.
+- l'encadré "statistique" pourrait etre retiré, étant donnée que le bouton affiche le nombre d'entités à l'écran.

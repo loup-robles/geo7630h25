@@ -37,6 +37,11 @@ Voici à quoi ressemble notre application finale
 
 ## Fonctionnalités incluses
 
+Voici une vidéo qui explique les fonctionnalitées de la carte : 
+ 
+https://www.linkedin.com/feed/update/urn:li:activity:7321893217916903425/
+
+
 ### Données
 L'application permet de visualiser, à l'aide d'une liste déroulante située dans la catégorie "Données" dans le coin supérieure gauche, les 5 indicateurs que nous avons calculé lors du précédent rendu : 
 

@@ -1,7 +1,7 @@
-# **📚 Laboratoire 9**
+# 🛰 Laboratoire 9 : Webmapping Open Source et interaction avec MapLibreGL
 ## **Étape 1, ouvrir le Repertoire GitHub du cours**
 
-Apres avoir cloné le Repertoire du cours on créer une branche pour que les modifications effectuées sur ce repertoire ne s'applique pas pour tous les utilisateurs.
+Apres avoir cloné le Repertoire du cours on créer une branche pour que les modifications effectuées sur ce repertoire ne s'appliquent pas pour tous les utilisateurs.
 
 ![alt text](<Capture d’écran 2025-03-11 210559.png>)
 
@@ -9,7 +9,7 @@ On peut ensuite ouvrir le fichier HTML en allant dans Laboratoire > Semaine9 > l
 
 ![alt text](<Capture d’écran 2025-03-11 211207.png>)
 
-on peut ouvrir la carte en faisant F5
+On peut ouvrir la carte en faisant F5
 
 ![alt text](<Capture d’écran 2025-03-11 211346.png>)
 
@@ -25,7 +25,7 @@ Ajouter les garages avec le fichier Geojson *garage.geojson*
 ![alt text](<Capture d’écran 2025-03-11 212235.png>)
 ![alt text](<Capture d’écran 2025-03-11 212245.png>)
 
-changer la couleur des polygones
+Changer la couleur des polygones
 
 ![alt text](<Capture d’écran 2025-03-11 212728.png>)
 ![alt text](<Capture d’écran 2025-03-11 212756.png>)
@@ -37,17 +37,17 @@ La fonction randomcolor existe déja. Pour s'entrainer on recréer un fichier Js
 
 ![alt text](<Capture d’écran 2025-03-11 213344.png>)
 
-il suffit de modifier le *lab*.hmtl* puis le *lab9.js* pour intégrer la fonction
+Il suffit de modifier le *lab*.hmtl* puis le *lab9.js* pour intégrer la fonction
 
 ![alt text](<Capture d’écran 2025-03-11 213810.png>)
 ![alt text](<Capture d’écran 2025-03-11 213433.png>)
 
-ajouter une coloration thématique aléatoire selon le *opérateur id* de l'entitée.
+Ajouter une coloration thématique aléatoire selon le *opérateur id* de l'entitée.
 
 ![alt text](<Capture d’écran 2025-03-11 220222.png>)
 ![alt text](<Capture d’écran 2025-03-11 220253.png>) 
 
-Les entité sont coloriée aléatoirement selon leur id
+Les entités sont coloriées aléatoirement selon leur id
 
 Ajouter des étiquêtes aux entités
 
